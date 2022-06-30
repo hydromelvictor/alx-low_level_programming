@@ -1,9 +1,6 @@
 #include <stdio.h>
 /**
-*	main
-*
-*	main  print with proper grammar
-*
+*	main - print with proper grammar
 *	Return: value 0
 */
 int main(void)
