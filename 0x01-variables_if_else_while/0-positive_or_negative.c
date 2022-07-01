@@ -3,9 +3,9 @@
 #include <stdio.h>
 
 /* *
-*main - function assign a random number 
-*description : This program will assign a random number to the variable n 
-*Return : 0
+* main - function assign a random number 
+* description : This program will assign a random number to the variable n 
+* Return : always 0
 */
 int main(void)
 {
