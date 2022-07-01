@@ -11,7 +11,6 @@ int main(void)
 	{
 	putchar(str);
 	}
-	putchar(10);
 	for (str = 65; str <= 90; str++)
 	{
 	putchar(str);
