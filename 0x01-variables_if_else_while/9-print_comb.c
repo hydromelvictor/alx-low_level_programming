@@ -1,4 +1,4 @@
-#include <stdio.h> 
+#include <stdio.h>
 
 /**
 *main -> Write a program that prints all possible combinations of
@@ -12,10 +12,12 @@ int i;
 	{
 	putchar(i);
 		if(i != 57)
+		{
 			putchar(44);
 			putchar(32);
+		}
 	}
-	for(str = 'a'; str <= 'f'; str++)
+	for (str = 'a'; str <= 'f'; str++)
 	{
 	putchar(str);
 	}
