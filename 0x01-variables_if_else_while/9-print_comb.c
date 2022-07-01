@@ -17,10 +17,6 @@ int i;
 			putchar(32);
 		}
 	}
-	for (str = 'a'; str <= 'f'; str++)
-	{
-	putchar(str);
-	}
 	putchar(10);
 	return (0);
 }
