@@ -4,6 +4,8 @@
 
 /* *
 *	main - function assign a random number 
+*	description: This program will assign a random number to the variable n 
+*	each time it is executed
 *	Return: 0
 */
 int main(void)
@@ -15,11 +17,11 @@ int main(void)
 
 	printf("%d ", n);
 
-	if (n > 0)
+	if ( n > 0 )
 	{
 		printf("is positive\n");
 	}
-	else if ( n == 0)
+	else if ( n == 0 )
 	{
 		printf("is zero\n");
 	}
