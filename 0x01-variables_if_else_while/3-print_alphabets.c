@@ -7,6 +7,7 @@
 int main(void)
 {
 	int str;
+	
 	for (str = 97; str <= 122; str++)
 	{
 	putchar(str);
