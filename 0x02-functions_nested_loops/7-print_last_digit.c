@@ -11,6 +11,6 @@ int m;
 	if (n < 0)
 		n = -n;
 	m = n % 10;
-	_putchar(m + 'o');
+	_putchar(m + '0');
 	return (m);
 }
