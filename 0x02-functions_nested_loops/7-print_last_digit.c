@@ -12,5 +12,6 @@ if (n < 0)
 	n = -n;
 m = n % 10;
 _putchar(m + '0');
+_putchar(10);
 return (m);
 }
