@@ -2,7 +2,7 @@
 
 /**
 *_abs -> Write a function that computes the absolute value of an integer
-@n: parameter
+*@n: parameter
 *Return: n
 */
 int _abs(int n)
