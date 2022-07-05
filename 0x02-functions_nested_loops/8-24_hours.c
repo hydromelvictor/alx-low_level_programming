@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-*jack_bauer -> Write a function that prints every minute of the day of 
+*jack_bauer -> Write a function that prints every minute of the day of
 *Jack Bauer
 */
 void jack_bauer(void)
@@ -27,12 +27,13 @@ _putchar(':');
 _putchar('0');
 _putchar(j);
 }
-else if ( j > 10)
+else if (j > 10)
 {
 _putchar(':');
 _putchar((j / 10) + '0');
 _putchar((j % 10) + '0');
 }
 }
+_putchar(10);
 }
 }
