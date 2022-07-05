@@ -2,7 +2,8 @@
 
 /**
 *_islower -> Write a function that checks for lowercase character
-*Return: 1 or 0 
+*@c: is a interger
+*Return: 1 or 0
 */
 int _islower(int c)
 {
