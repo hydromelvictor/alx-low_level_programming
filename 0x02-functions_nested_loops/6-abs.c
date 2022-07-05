@@ -6,9 +6,16 @@
 */
 int _abs(int n)
 {
-	if (int print_sign(int n) == 1)
-		return (n);
-	if (int print_sign(int n) == -1)
-		return (-n);
-	return (0);
+if (n > 0)
+{
+return (n);
+}
+if (n < 0)
+{
+return (-n);
+}
+if(n == 0)
+{
+return (0);
+}
 }
