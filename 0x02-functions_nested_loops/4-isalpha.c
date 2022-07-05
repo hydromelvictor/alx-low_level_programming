@@ -2,7 +2,7 @@
 
 /**
 *_isalpha -> Write a function that checks for lowercase character.
-*@c; is a integer
+*@c: is a integer
 *Return: 0 or 1
 */
 int _isalpha(int c)
