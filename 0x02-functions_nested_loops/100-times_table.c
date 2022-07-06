@@ -16,8 +16,6 @@ int i, j;
                 int k  = i * j;
                 if (k < 10)
                 {
-                if(j !=0)
-                	_putchar(32);
                     _putchar(k + '0');
                     if(j != n)
                     	_putchar(',');
@@ -26,8 +24,6 @@ int i, j;
                 }
                 else
                 {
-                if(j !=0)
-                	_putchar(32);
                     _putchar((k / 10) + '0');
                     _putchar((k % 10) + '0');
                     if(j != n)
