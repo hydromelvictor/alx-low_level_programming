@@ -6,7 +6,7 @@
 *@n: parameter
 *Return: fibonacci number
 */
-long fibonacci(int n)
+long fibonacci(long n)
 {
 if (n == 0 || n == 1)
 	return (1);
@@ -21,10 +21,10 @@ return (fibonacci(n - 1) + fibonacci(n - 2));
 */
 int main(void)
 {
-int i;
+long i;
 for (i = 1; i <= 50; i++)
 {
-printf("%s,	", fibonacci(i));
+printf("%ld,	", fibonacci(i));
 }
 printf("\n");
 return (0);

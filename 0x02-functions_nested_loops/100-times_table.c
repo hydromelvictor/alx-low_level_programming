@@ -1,21 +1,31 @@
 #include "main.h"
 
 /**
-*print_times_table -> 
+*print_times_table ->
 *@n: parameter
 */
 void print_times_table(int n)
 {
-int i;
-if(n <=15 && n >=0){
-for(i = 0; i < 10; i++)
+int i, j;
+if (n <= 15 && n > 0)
 {
-_putchar(n + '0');
-_putchar('x');
-_putchar(i + '0');
-_putchar('=');
-_putchar( (n * i) + '0');
-_putchar(10);
+for (i = 0; i < n; i++)
+{
+for(j = 0; j < n; j++)
+{
+	int k  = i * j;
+	if(k < 10)
+	{
+	_putchar(k + '0');
+	_putchar(",  ");
+	}
+	else
+	{
+	_putchar((k / 10) + '0');
+	_putchar((k % 10) + '0');
+	_putchar(",  ");
+	}
+}
 }
 }
 }
