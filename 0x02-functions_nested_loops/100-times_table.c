@@ -26,7 +26,7 @@ _putchar(32);
 _putchar(32);
 }
 }
-else if(k > 10 && k < 100)
+else if(k >= 10 && k < 100)
 {
 _putchar((k / 10) + '0');
 _putchar((k % 10) + '0');
