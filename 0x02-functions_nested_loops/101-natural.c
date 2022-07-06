@@ -16,6 +16,6 @@ long i = 0, j = 0;
 	}
 	i++;
 	}
-	printf("%s", j);
+	printf("%ld", j);
 	return (0);
 }
