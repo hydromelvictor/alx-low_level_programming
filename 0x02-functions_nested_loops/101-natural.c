@@ -1,10 +1,11 @@
 #include <stdio.h>
 
 /**
-*natural -> If we list all the natural numbers below 10 that are
+*main -> If we list all the natural numbers below 10 that are
 *multiples of 3 or 5
+*Return: always 0
 */
-void natural(void)
+int main(void)
 {
 int i = 0, j = 0;
 	while(j <1024)
@@ -16,4 +17,5 @@ int i = 0, j = 0;
 	i++;
 	}
 	printf("%d", j);
+	return (0);
 }

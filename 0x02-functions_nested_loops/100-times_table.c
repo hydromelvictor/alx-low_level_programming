@@ -15,5 +15,5 @@ _putchar('x');
 _putchar(i + '0');
 _putchar('=');
 _putchar( (n * i) + '0');
-_putchar(\n);
+_putchar(10);
 }

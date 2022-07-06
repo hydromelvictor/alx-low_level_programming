@@ -7,6 +7,7 @@
 */
 int main(void)
 {
+int i;
 for (i = 1; i <= 50; i++)
 {
 printf("%d,	", fibonacci(i));

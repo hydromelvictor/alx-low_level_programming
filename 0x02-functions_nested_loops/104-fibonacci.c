@@ -8,6 +8,7 @@
 */
 int main(void)
 {
+int i;
 for (i = 1; i <= 98; i++)
 {
 printf("%d,	", fibonacci(i));
