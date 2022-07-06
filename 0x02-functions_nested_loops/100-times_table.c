@@ -21,17 +21,27 @@ int i, j;
                     _putchar(k + '0');
                     if(j != n)
                     	_putchar(',');
-                   	 _putchar(32);
-                   	  _putchar(32);
+                   	_putchar(32);
+                   	_putchar(32);
                 }
-                else
+                else if(k > 10)
                 {
                     _putchar((k / 10) + '0');
                     _putchar((k % 10) + '0');
                     if(j != n)
                     	_putchar(',');
-                   	 _putchar(32);
-                   	  _putchar(32);
+                   	_putchar(32);
+                   	_putchar(32);
+                }
+                else
+                {
+                    _putchar(((k / 10) / 10) + '0');
+                    _putchar((((k / 10) / 10) % 10) + '0');
+                    _putchar((k % 10) + '0');
+                    if(j != n)
+                    	_putchar(',');
+                   	_putchar(32);
+                   	_putchar(32);
                 }
             }
             _putchar(10);
