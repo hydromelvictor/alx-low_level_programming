@@ -22,7 +22,7 @@ int i, j;
                     if(j != n)
                     	_putchar(',');
                    	 _putchar(32);
-                   	 _putchar(32);
+                   	  _putchar(32);
                 }
                 else
                 {
@@ -31,6 +31,7 @@ int i, j;
                     if(j != n)
                     	_putchar(',');
                    	 _putchar(32);
+                   	  _putchar(32);
                 }
             }
             _putchar(10);
