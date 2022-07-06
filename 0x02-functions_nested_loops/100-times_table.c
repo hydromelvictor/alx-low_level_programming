@@ -19,6 +19,7 @@ int i, j;
                 if(j !=0)
                 	_putchar(32);
                     _putchar(k + '0');
+                    _putchar(32);
                     if(j != n)
                     	_putchar(',');
                    	 _putchar(32);
@@ -29,6 +30,7 @@ int i, j;
                 	_putchar(32);
                     _putchar((k / 10) + '0');
                     _putchar((k % 10) + '0');
+                    _putchar(32);
                     if(j != n)
                     	_putchar(',');
                    	 _putchar(32);
