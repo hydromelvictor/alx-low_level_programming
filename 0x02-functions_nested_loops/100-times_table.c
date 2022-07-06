@@ -17,3 +17,5 @@ _putchar('=');
 _putchar( (n * i) + '0');
 _putchar(10);
 }
+}
+}

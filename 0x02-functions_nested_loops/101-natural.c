@@ -7,15 +7,15 @@
 */
 int main(void)
 {
-int i = 0, j = 0;
-	while(j <1024)
+long i = 0, j = 0;
+	while (j < 1024)
 	{
-	if( (i % 3) == 0 || (i % 5) == 0)
+	if ((i % 3) == 0 || (i % 5) == 0)
 	{
 	j += i;
 	}
 	i++;
 	}
-	printf("%d", j);
+	printf("%s", j);
 	return (0);
 }

@@ -13,6 +13,6 @@ _putchar('x');
 _putchar(i + '0');
 _putchar('=');
 _putchar( (9*i ) + '0');
-_putchar(\n);
+_putchar('\n');
 }
 }
