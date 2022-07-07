@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
-*_isupper -  Écrivez une fonction qui vérifie les caractères
-*majuscules
+*_isupper - Write a function that checks for uppercase
+*character
 *@c: parameter
 *Return: 1 or 0 always
 */
@@ -16,5 +16,4 @@ else
 {
 return (0);
 }
-_putchar(10);
 }
