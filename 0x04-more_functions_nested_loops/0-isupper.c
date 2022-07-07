@@ -4,7 +4,7 @@
 *_isupper -  Écrivez une fonction qui vérifie les caractères
 *majuscules
 *@c: parameter
-*Return: 1 or o always
+*Return: 1 or 0 always
 */
 int _isupper(int c)
 {
@@ -14,6 +14,7 @@ return (1);
 }
 else
 {
+_putchar(10);
 return (0);
 }
 }
