@@ -7,7 +7,8 @@
 *each time it is executed
 *Return: always 0
 */
-void positive_or_negative(int i){
+void positive_or_negative(int i)
+{
 int n;
 
 srand(time(0));
