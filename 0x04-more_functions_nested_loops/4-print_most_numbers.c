@@ -15,5 +15,4 @@ _putchar(i + '0');
 }
 i++;
 }
-_putchar(10);
 }
