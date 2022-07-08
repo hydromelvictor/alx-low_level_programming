@@ -8,12 +8,14 @@
 */
 int _isupper(int c)
 {
-if (_putchar(c) <= 'Z' && _putchar(c) >= 'A')
+if (c <= 90 && c >= 65)
 {
+_putchar(10);
 return (1);
 }
 else
 {
+_putchar(10);
 return (0);
 }
 }
