@@ -11,7 +11,7 @@ int i, j;
 
 if (size < 0)
 {
-return;
+_putchar(10);
 }
 else
 {
