@@ -34,7 +34,7 @@ while (a >= 10)
 a = left_digit(a);
 i++;
 }
-/*_putchar(a + '0');*/
+_putchar(a + '0');
 while (i > 0)
 {
 a = a * 10;
