@@ -22,6 +22,7 @@ int i = 0;
 if(n < 0)
 {
 n = -n;
+_putchar('-');
 }
 if (n >= 10)
 {
@@ -40,6 +41,7 @@ a = a * 10;
 }
 n = n - a;
 }
+_putchar(n + '0');
 }
 else
 {
