@@ -12,4 +12,3 @@ void fizz_buzz(void);
 void print_triangle(int size);
 void print_number(int n);
 int left_digit(int n);
-int prime_factor(void);
