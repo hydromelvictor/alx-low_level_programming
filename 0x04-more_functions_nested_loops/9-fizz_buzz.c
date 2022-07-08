@@ -2,7 +2,6 @@
 
 /**
 *fizz_buzz - print fizz or buzz or fizzbuzz
-*Return: always 0
 */
 void fizz_buzz(void)
 {
@@ -38,4 +37,14 @@ else
 printf("%d ", i);
 }
 }
+}
+
+/**
+*main - complier
+*Return: always 0
+*/
+int main(void)
+{
+fizz_buzz();
+return (0);
 }
