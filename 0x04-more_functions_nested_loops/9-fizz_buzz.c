@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include "main.h"
 /**
 *fizz_buzz - print fizz or buzz or fizzbuzz
 */
@@ -13,7 +13,7 @@ if (i % 3 == 0 && i % 5 != 0)
 printf("Fizz");
 if (i < 100)
 {
-printf(" ");
+_putchar(32);
 }
 }
 else if (i % 5 == 0 && i % 3 != 0)
@@ -21,7 +21,7 @@ else if (i % 5 == 0 && i % 3 != 0)
 printf("Buzz");
 if (i < 100)
 {
-printf(" ");
+_putchar(32);
 }
 }
 else if (i % 3 == 0 && i % 5 == 0)
@@ -29,7 +29,7 @@ else if (i % 3 == 0 && i % 5 == 0)
 printf("FizzBuzz");
 if (i < 100)
 {
-printf(" ");
+_putchar(32);
 }
 }
 else
@@ -37,7 +37,7 @@ else
 printf("%d", i);
 if (i < 100)
 {
-printf(" ");
+_putchar(32);
 }
 }
 }
