@@ -38,6 +38,7 @@ _putchar(a + '0');
 while (i > 0)
 {
 a = a * 10;
+i--;
 }
 n = n - a;
 }
@@ -47,7 +48,6 @@ else
 {
 if (n < 10)
 {
-_putchar('-');
 _putchar(n + '0');
 }else
 {
