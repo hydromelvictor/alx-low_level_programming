@@ -4,7 +4,7 @@
 *fizz_buzz - print fizz or buzz or fizzbuzz
 *Return: always 0
 */
-int fizz_buzz(void)
+void fizz_buzz(void)
 {
 int i;
 for (i = 1; i <= 100; i++)
@@ -38,5 +38,4 @@ else
 printf("%d ", i);
 }
 }
-return (0);
 }
