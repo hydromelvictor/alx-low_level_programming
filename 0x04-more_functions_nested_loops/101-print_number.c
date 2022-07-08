@@ -19,7 +19,7 @@ void print_number(int n)
 {
 int a;
 int i = 0;
-if(n < 0)
+if (n < 0)
 {
 n = -n;
 _putchar('-');
@@ -34,7 +34,7 @@ while (a >= 10)
 a = left_digit(a);
 i++;
 }
-_putchar(a + '0');
+/*_putchar(a + '0');*/
 while (i > 0)
 {
 a = a * 10;
@@ -49,7 +49,8 @@ else
 if (n < 10)
 {
 _putchar(n + '0');
-}else
+}
+else
 {
 _putchar(n + '0');
 }
