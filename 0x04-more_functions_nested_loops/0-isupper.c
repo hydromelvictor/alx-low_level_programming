@@ -10,12 +10,10 @@ int _isupper(int c)
 {
 if (c <= 90 && c >= 65)
 {
-_putchar(10);
 return (1);
 }
 else
 {
-_putchar(10);
 return (0);
 }
 }
