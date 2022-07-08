@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 /**
-*main - factor
+*prime_factor - factor
 *Return: always 0
 */
-int main(void)
+int prime_factor(void)
 {
 printf("%d", 3);
 return (0);
