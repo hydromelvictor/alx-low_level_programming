@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdlib.h>
 
 /**
 *swap_int - swaps the values of two integers
@@ -7,7 +8,7 @@
 */
 void swap_int(int *a, int *b)
 {
-int *p;
+int *p = 0;
 *p = *a;
 *a = *b;
 *b = *p;
