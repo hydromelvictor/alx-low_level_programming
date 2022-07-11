@@ -12,7 +12,7 @@ while (str[i] != '\0')
 i++;
 }
 
-while ((j % 2 == 0) < i - 1)
+while ((j % 2 == 0) && j < i - 1)
 {
 _putchar(str[j]);
 j++;
