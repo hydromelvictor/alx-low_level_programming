@@ -20,7 +20,7 @@ else
 {
 n = (i - 1) / 2;
 }
-while (n + 1 <= i)
+while (n + 2 <= i)
 {
 _putchar(str[n]);
 n++;
