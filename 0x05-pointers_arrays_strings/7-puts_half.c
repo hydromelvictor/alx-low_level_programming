@@ -22,7 +22,7 @@ n = (i - 1) / 2;
 }
 while (n <= i)
 {
-_putchar(str[i]);
+_putchar(str[n]);
 n++;
 }
 _putchar(10);
