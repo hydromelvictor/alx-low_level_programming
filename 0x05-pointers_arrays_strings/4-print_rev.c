@@ -4,6 +4,7 @@
 *print_rev - prints a string, in reverse
 *@s: parameter
 */
+
 void print_rev(char *s)
 {
 int len = 0, i = 0;
