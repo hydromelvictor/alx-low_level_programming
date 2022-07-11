@@ -23,6 +23,7 @@ n = (i - 1) / 2;
 while (i >= n)
 {
 _putchar(str[i]);
+i--;
 }
 _putchar(10);
 }
