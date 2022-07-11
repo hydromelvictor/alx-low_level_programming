@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
 *reset_to_98 - parameter update
 *@n: parameter
