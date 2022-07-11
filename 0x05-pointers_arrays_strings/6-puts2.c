@@ -12,10 +12,10 @@ while (str[i] != '\0')
 i++;
 }
 
-while ((j + 2) < i - 1)
+while (j < i - 1)
 {
 _putchar(str[j]);
-j++;
+j *= 2;
 }
 _putchar(10);
 }
