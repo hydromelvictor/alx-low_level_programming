@@ -13,7 +13,7 @@ i++;
 }
 while (j <= i - 1)
 {
-if(j % 2 == 0){
+if (j % 2 == 0){
 _putchar(str[j]);
 }
 j++;
