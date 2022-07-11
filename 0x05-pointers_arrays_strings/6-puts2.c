@@ -11,7 +11,7 @@ while (str[i] != '\0')
 {
 i++;
 }
-while (j < i - 1)
+while (j <= i - 1)
 {
 if(j % 2 == 0){
 _putchar(str[j]);
