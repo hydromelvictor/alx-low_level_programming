@@ -36,8 +36,8 @@ i = 1;
 nbre = _putchar(n[0]);
 while (n[i] != '\0')
 {
-i++;
 nbre = nbre * 10 + _putchar(n[i]);
+i++;
 }
 
 if (p > 0)
