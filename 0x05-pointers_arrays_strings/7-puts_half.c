@@ -19,7 +19,6 @@ else
 {
 n = (i - 1) / 2;
 }
-n += 1;
 while (n < i)
 {
 _putchar(str[n]);
