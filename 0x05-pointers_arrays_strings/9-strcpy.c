@@ -15,6 +15,6 @@ while (i != '\0')
 n += src[i];
 i++;
 }
-*dest = n;
+dest = &n;
 return (dest);
 }
