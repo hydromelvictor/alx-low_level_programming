@@ -26,11 +26,10 @@ if (_putchar(s[i - 1]) == _putchar(45))
 {
 p++;
 }
-n = s[i];
+n = s[i] + '0';
 }
 }
 }
-n = (int ) n;
 if (p > 0)
 {
 n = -n;
