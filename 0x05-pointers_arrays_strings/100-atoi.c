@@ -15,15 +15,15 @@ i++;
 }
 for (j = 0; j < i; j++)
 {
-if (_putchar(s[i]) < _putchar(48) || _putchar(s[i]) > _putchar(57))
+if (_putchar(s[i]) < 48 || _putchar(s[i]) > 57)
 {
 return (0);
 }
 else
 {
-if (_putchar(s[i]) <= _putchar(57) && _putchar(s[i]) >= _putchar(48))
+if (_putchar(s[i]) <= 57 && _putchar(s[i]) >= 48)
 {
-if (_putchar(s[i - 1]) == _putchar(45))
+if (_putchar(s[i - 1]) == 45)
 {
 p++;
 }
