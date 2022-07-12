@@ -7,7 +7,7 @@
 */
 int _atoi(char *s)
 {
-int i, j, p = 0;
+int i, j, nbre, p = 0;
 char *n;
 while (s[i] != '\0')
 {
@@ -15,26 +15,33 @@ i++;
 }
 for (j = 0; j < i; j++)
 {
-if (_putchar(s[i]) < 48 || _putchar(s[i]) > 57)
+if (_putchar(s[j]) < _putchar(48) || _putchar(s[j]) > _putchar(57))
 {
 return (0);
 }
 else
 {
-if (_putchar(s[i]) <= 57 && _putchar(s[i]) >= 48)
+if (_putchar(s[j]) <= _putchar(57) && _putchar(s[j]) >= _putchar(48))
 {
-if (_putchar(s[i - 1]) == 45)
+if (_putchar(s[j - 1]) == _putchar(45))
 {
 p++;
 }
-n = s + i;
+*(n + j) = *(s + j); 
 }
 }
 }
-i =(int) *n;
+i = 1;
+nbre = _putchar(n[0]);
+while (n[i] != '\0')
+{
+i++;
+nbre = nbre*10 + _putchar(n[i]);
+}
+
 if (p > 0)
 {
-i = -i;
+nbre = -nbre;
 }
-return (i);
+return (nbre);
 }
