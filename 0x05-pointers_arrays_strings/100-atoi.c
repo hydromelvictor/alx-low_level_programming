@@ -16,8 +16,8 @@ i++;
 i = i + 1;
 for (j = 0; j <= i; j++)
 {
-if ((_putchar(s[i]) == _putchar(45) && _putchar(s[i + 1]) <= _putchar(57) &&
-_putchar(s[i + 1]) >= _putchar(48) || _putchar(s[i]) <= _putchar(57) &&
+if (((_putchar(s[i]) == _putchar(45) && _putchar(s[i + 1]) <= _putchar(57) &&
+_putchar(s[i + 1]) >= _putchar(48)) || _putchar(s[i]) <= _putchar(57) &&
 _putchar(s[i]) >= _putchar(48)))
 {
 while (s[i + 1] <= _putchar(57) && s[i + 1] >= _putchar(48))
