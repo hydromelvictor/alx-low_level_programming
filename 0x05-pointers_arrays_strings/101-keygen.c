@@ -13,3 +13,13 @@ for(i = 0; i < 8; i++)
 printf("%d", rand());
 }
 }
+
+/**
+*main - the main
+*Return: always 0
+*/
+int main(void)
+{
+crackme();
+return (0);
+}
