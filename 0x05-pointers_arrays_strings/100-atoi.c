@@ -8,7 +8,7 @@
 */
 int _atoi(char *s)
 {
-int i, j, nbre, p = 0;
+int i = 0, j = 0, nbre = 0, p = 0;
 char *n = malloc(sizeof(char));
 while (s[i] != '\0')
 {
