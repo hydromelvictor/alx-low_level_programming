@@ -13,7 +13,7 @@ int i = 0;
 while (i != '\0')
 {
 i++;
-*dest = src[i];
+dest[i] = src[i];
 }
 return (dest);
 }
