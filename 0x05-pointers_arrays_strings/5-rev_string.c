@@ -11,11 +11,10 @@ while (s[i] != '\0')
 {
 i++;
 }
-
 while (i >= 0)
 {
 _putchar(s[i]);
-if(i == 0){
+if (i == 0){
 _putchar(10);
 }
 i--;
