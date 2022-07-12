@@ -7,7 +7,8 @@
 */
 int _atoi(char *s)
 {
-int i, j, n, p = 0;
+int i, j, p = 0;
+char *n;
 while (s[i] != '\0')
 {
 i++;
@@ -26,13 +27,14 @@ if (_putchar(s[i - 1]) == _putchar(45))
 {
 p++;
 }
-n = s[i] + '0';
+n = s + i;
 }
 }
 }
+i =(int) *n;
 if (p > 0)
 {
-n = -n;
+i = -i;
 }
-return (n);
+return (i);
 }
