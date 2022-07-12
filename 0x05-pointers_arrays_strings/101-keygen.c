@@ -7,7 +7,7 @@
 */
 void crackme(void)
 {
-printf("Tada! Congrats");
+printf("%d", rand());
 }
 
 /**
