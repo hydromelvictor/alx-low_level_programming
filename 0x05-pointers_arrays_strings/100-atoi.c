@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdlib.h>
 
 /**
 *_atoi - convert a string to an integer
@@ -8,7 +9,7 @@
 int _atoi(char *s)
 {
 int i, j, nbre, p = 0;
-char *n = 0;
+char *n = malloc(sizeof(char));
 while (s[i] != '\0')
 {
 i++;
@@ -27,7 +28,7 @@ if (_putchar(s[j - 1]) == _putchar(45))
 {
 p++;
 }
-*(n + j) = *(s + j); 
+*(n + j) = *(s + j);
 }
 }
 }
@@ -36,7 +37,7 @@ nbre = _putchar(n[0]);
 while (n[i] != '\0')
 {
 i++;
-nbre = nbre*10 + _putchar(n[i]);
+nbre = nbre * 10 + _putchar(n[i]);
 }
 
 if (p > 0)
