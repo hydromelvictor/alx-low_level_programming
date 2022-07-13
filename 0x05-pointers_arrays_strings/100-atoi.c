@@ -39,7 +39,6 @@ while (n[i] != '\0')
 nbre = nbre * 10 + _putchar(n[i]);
 i++;
 }
-
 if (p > 0)
 {
 nbre = -nbre;

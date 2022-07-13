@@ -1,0 +1,23 @@
+#include "main.h"
+
+/**
+*reverse_array - reverses the content of an array of
+*integers
+*@a: parameter
+*@n: parameter
+*/
+void reverse_array(int *a, int n)
+{
+int i = 0, m = 0;
+int j = n - 1;
+while (j >= 0)
+{
+for (i = 0; i < j; i++)
+{
+m = *(a + i);
+*(a + i) = *(a + i + 1);
+*(a + i + 1) = m;
+}
+j--;
+}
+}
