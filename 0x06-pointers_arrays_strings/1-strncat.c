@@ -25,5 +25,12 @@ for (k = 0; k < n; k++)
 *(dest + i + k) = *(src + k);
 }
 }
+else
+{
+for (k = 0; k < j; k++)
+{
+*(dest + i + k) = *(src + k);
+}
+}
 return (dest);
 }
