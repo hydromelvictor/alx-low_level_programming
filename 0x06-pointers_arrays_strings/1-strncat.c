@@ -18,7 +18,7 @@ while (src[j] != '\0')
 {
 j++;
 }
-if (n >= j)
+if (n <= j)
 {
 for (k = 0; k < n; k++)
 {
