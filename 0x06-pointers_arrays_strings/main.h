@@ -14,5 +14,3 @@ void print_buffer(char *b, int size);
 void print_array(int *a, int n);
 int cmp(char str1, char str2);
 int count(char *s);
-char *sup_copy(char *dest, char *src, int n);
-char *sub_copy(char *dest, char *src, int n);
