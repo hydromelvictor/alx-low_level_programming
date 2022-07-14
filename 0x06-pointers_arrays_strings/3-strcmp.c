@@ -41,16 +41,27 @@ return (i);
 */
 int _sup(char *s1, char *s2)
 {
-int i = count(s1), k = 0, s = 0;
+int i = count(s1), j = count(s2), k = 0, n = 0, s = 0;
 for (k = 0; k < i; k++)
 {
-if (k == i - 1)
-s = 1;
-else
-{
 s = cmp(s1[k], s2[k]);
-break;
+if (s == 0)
+n++;
+else
+return (s);
 }
+int a = k;
+if (n == a)
+{
+for (; k < j; k++)
+{
+if (s2[j] == '\0')
+n++;
+}
+}
+if (n == k)
+{
+s = 0;
 }
 return (s);
 }
@@ -63,16 +74,27 @@ return (s);
 */
 int _sub(char *s1, char *s2)
 {
-int j = count(s2), k = 0, s = 0;
+int i = count(s1), j = count(s2), k = 0, n = 0, s = 0;
 for (k = 0; k < j; k++)
 {
-if (k == j - 1)
-s = -1;
-else
-{
 s = cmp(s1[k], s2[k]);
-break;
+if (s == 0)
+n++;
+else
+return (s);
 }
+int a = k;
+if (n == a)
+{
+for (; k < i; k++)
+{
+if (s1[i] == '\0')
+n++;
+}
+}
+if (n == k)
+{
+s = 0;
 }
 return (s);
 }
