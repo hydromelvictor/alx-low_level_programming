@@ -43,7 +43,7 @@ for (k = 0; k < n; k++)
 }
 else
 {
-if (j <= i)
+if (j < i)
 {
 for (k = 0; k <= j; k++)
 {
