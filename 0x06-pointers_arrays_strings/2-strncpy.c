@@ -26,7 +26,7 @@ char *_strncpy(char *dest, char *src, int n)
 int k, i = len(dest), j = len(src);
 if (i > n)
 {
-if (j <= n)
+if (j < n)
 {
 for (k = 0; k <= j; k++)
 {
