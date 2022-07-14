@@ -23,15 +23,14 @@ return (i);
 */
 int cmp(char str1, char str2)
 {
+int i = 0;
 if (str1 < str2)
-{
-return (-1);
-}
-if (str1 > str2)
-{
-return (1);
-}
-return (0);
+i = -1;
+else if (str1 > str2)
+i = 1;
+else
+i = 0;
+return (i);
 }
 
 /**
@@ -43,7 +42,7 @@ return (0);
 int _strcmp(char *s1, char *s2)
 {
 int i = count(s1), j = count(s2), k = 0;
-int n = 0;
+int n = 0, s = 0;
 if (i == j)
 {
 for (k = 0; k < i; k++)
@@ -51,7 +50,7 @@ for (k = 0; k < i; k++)
 if (cmp(s1[k], s2[k]) == 0)
 n++;
 else
-return (cmp(s1[k], s2[k]));
+s = cmp(s1[k], s2[k]);
 }
 }
 else if (i < j)
@@ -59,9 +58,9 @@ else if (i < j)
 for (k = 0; k < j; k++)
 {
 if (k == i)
-return (1);
+s = 1;
 else
-return (cmp(s1[k], s2[k]));
+s = cmp(s1[k], s2[k]);
 }
 }
 else
@@ -69,14 +68,14 @@ else
 for (k = 0; k < i; k++)
 {
 if (k == j)
-return (-1);
+s = -1;
 else
-return (cmp(s1[k], s2[k]));
+s = cmp(s1[k], s2[k]);
 }
 }
 if (n == i)
 {
-return (0);
+s = 0;
 }
-return (0);
+return (s);
 }
