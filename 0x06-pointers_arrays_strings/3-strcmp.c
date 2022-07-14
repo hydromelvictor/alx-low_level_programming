@@ -44,7 +44,7 @@ int _sup(char *s1, char *s2)
 int i = count(s1), k = 0, s = 0;
 for (k = 0; k < i; k++)
 {
-if (k == i)
+if (k == i - 1)
 s = 1;
 else
 {
@@ -66,7 +66,7 @@ int _sub(char *s1, char *s2)
 int j = count(s2), k = 0, s = 0;
 for (k = 0; k < j; k++)
 {
-if (k == j)
+if (k == j - 1)
 s = -1;
 else
 {
@@ -104,7 +104,7 @@ else
 {
 s = _sub(s1, s2);
 }
-if (n == i - 1)
+if (n == i)
 {
 s = 0;
 }
