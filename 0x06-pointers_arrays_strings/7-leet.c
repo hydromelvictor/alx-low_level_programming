@@ -12,7 +12,7 @@ char *s = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 char *t = "4bcd3fghijk1mn0pqrs7uvwxyz4BCD3FGHIJK1MN0PQRS7UVWXYZ";
 while (c[i] != '\0')
 {
-for (j = 0; j < 52; j++)
+for (j = 0; j < 51; j++)
 {
 if (c[i] == s[j])
 {
