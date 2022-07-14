@@ -7,18 +7,19 @@
 */
 char *leet(char *c)
 {
-int i = 0, j = 0;
-char *s = "aelotAELOT";
-char *t = "4310743107";
+int i = 0, j = 5, k;
+char s[5] = "AELOT";
+char t[5] = "43107";
 while (c[i] != '\0')
 {
-while (j < 10)
+k = 0;
+while (k < j)
 {
-if (c[i] == s[j])
+if (c[i] == s[k] || c[i] - 32 == s[k])
 {
-*(c + i) = *(t + j);
+c[i] = t[k];
 }
-j++;
+k++;
 }
 i++;
 }
