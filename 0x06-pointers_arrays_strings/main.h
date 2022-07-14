@@ -16,3 +16,4 @@ int cmp(char str1, char str2);
 int count(char *s);
 char *cpy_sup(char *dest, char *src, int n);
 char *cpy_sub(char *dest, char *src, int n);
+int len(char *c);
