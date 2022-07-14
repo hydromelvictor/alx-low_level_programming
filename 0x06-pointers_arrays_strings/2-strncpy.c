@@ -33,7 +33,7 @@ for (k = 0; k <= j; k++)
 *(dest + k) = *(src + k);
 }
 for (; k < n; k++)
-*(dest + k + 1) = '\0';
+*(dest + k) = '\0';
 }
 else
 {
@@ -50,7 +50,7 @@ for (k = 0; k <= j; k++)
 *(dest + k) = *(src + k);
 }
 for (; k < i; k++)
-*(dest + k + 1) = '\0';
+*(dest + k) = '\0';
 }
 else
 {
