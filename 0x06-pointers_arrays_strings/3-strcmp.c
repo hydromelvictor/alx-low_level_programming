@@ -58,7 +58,7 @@ else if (i < j)
 for (k = 0; k < j; k++)
 {
 if (k == i)
-s = 1;
+s = -1;
 else
 s = cmp(s1[k], s2[k]);
 }
@@ -68,7 +68,7 @@ else
 for (k = 0; k < i; k++)
 {
 if (k == j)
-s = -1;
+s = 1;
 else
 s = cmp(s1[k], s2[k]);
 }
