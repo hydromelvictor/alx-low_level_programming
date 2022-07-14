@@ -104,7 +104,7 @@ else
 {
 s = _sub(s1, s2);
 }
-if (n == i)
+if (n == i - 1)
 {
 s = 0;
 }
