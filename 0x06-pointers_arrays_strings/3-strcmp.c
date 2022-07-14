@@ -34,6 +34,50 @@ return (i);
 }
 
 /**
+*_sup - Write a function that compares two strings
+*@s1: parameter
+*@s2: parameter
+*Return: integer
+*/
+int _sup(char *s1, char *s2)
+{
+int i = count(s1), k = 0, s = 0;
+for (k = 0; k < i; k++)
+{
+if (k == i)
+s = 1;
+else
+{
+s = cmp(s1[k], s2[k]);
+break;
+}
+}
+return (s);
+}
+
+/**
+*_sub - Write a function that compares two strings
+*@s1: parameter
+*@s2: parameter
+*Return: integer
+*/
+int _sub(char *s1, char *s2)
+{
+int j = count(s2), k = 0, s = 0;
+for (k = 0; k < j; k++)
+{
+if (k == j)
+s = -1;
+else
+{
+s = cmp(s1[k], s2[k]);
+break;
+}
+}
+return (s);
+}
+
+/**
 *_strcmp - Write a function that compares two strings
 *@s1: parameter
 *@s2: parameter
@@ -41,8 +85,7 @@ return (i);
 */
 int _strcmp(char *s1, char *s2)
 {
-int i = count(s1), j = count(s2), k = 0;
-int n = 0, s = 0;
+int i = count(s1), j = count(s2), k = 0, n = 0, s = 0;
 if (i == j)
 {
 for (k = 0; k < i; k++)
@@ -55,23 +98,11 @@ s = cmp(s1[k], s2[k]);
 }
 else if (i < j)
 {
-for (k = 0; k < j; k++)
-{
-if (k == i)
-s = -1;
-else
-s = cmp(s1[k], s2[k]);
-}
+s = _sup(s1, s2);
 }
 else
 {
-for (k = 0; k < i; k++)
-{
-if (k == j)
-s = 1;
-else
-s = cmp(s1[k], s2[k]);
-}
+s = _sub(s1, s2);
 }
 if (n == i)
 {
