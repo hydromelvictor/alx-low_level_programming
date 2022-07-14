@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
 *sign - unsigned
 *@n: parameter
