@@ -12,9 +12,10 @@ while (s[i] != '\0')
 {
 if (s[i] == c)
 {
-break;
+return (s + i);
 }
 i++;
 }
-return (s + i);
+*s = '\0';
+return (s);
 }
