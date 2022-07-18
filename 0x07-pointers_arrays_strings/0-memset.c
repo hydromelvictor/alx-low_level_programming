@@ -13,10 +13,21 @@ while (s[i] != '\0')
 {
 i++;
 }
+if (i >= n)
+{
 while (j <= n)
 {
 s[j] = b;
 j++;
+}
+}
+else
+{
+while (j <= i)
+{
+s[j] = b;
+j++;
+}
 }
 return (s);
 }
