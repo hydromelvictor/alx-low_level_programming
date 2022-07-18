@@ -8,7 +8,7 @@
 unsigned int _strspn(char *s, char *accept)
 {
 unsigned int i = 0, k = 0, j = 0, p = 0, z = 0;
-unsigned int m = _putchar(32);
+int m = _putchar(32);
 while (accept[j] != '\0')
 {
 j++;
@@ -23,7 +23,7 @@ z++;
 }
 p++;
 }
-if (z == (i - k))
+if (z == (i - k + 1))
 {
 return (z);
 }
