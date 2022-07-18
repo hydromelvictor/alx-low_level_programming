@@ -15,7 +15,7 @@ i++;
 }
 if (i >= n)
 {
-while (j <= n)
+while (j < n)
 {
 s[j] = b;
 j++;
