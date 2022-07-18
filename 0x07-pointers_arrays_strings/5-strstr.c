@@ -37,5 +37,5 @@ return (haystack + j);
 }
 j++;
 }
-return (haystack + j);
+return (haystack + j + 1);
 }
