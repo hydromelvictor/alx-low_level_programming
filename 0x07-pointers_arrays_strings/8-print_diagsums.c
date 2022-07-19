@@ -6,23 +6,14 @@
 *@a: parameter
 *@size: parameter
 */
-void print_chessboard(char (*a)[8])
+void print_diagsums(int *a, int size)
 {
 int i = 0, j = 0, k = 0;
-while (**(a + i) != '\0')
+while (i < size)
 {
-k++;
-}
-while (**(a + i) != '\0')
-{
-if(i != 0 && i != k)
-{
-_putchar('\n');
-}
-for (j = 0; j < 8; j++)
-{
-_putchar(a[i][j]);
-}
+j = j + *(a + i * size + i);
+k = k + *(a + i * size + size - i - 1);
 i++;
 }
+printf("%i, %i\n", j, k);
 }
