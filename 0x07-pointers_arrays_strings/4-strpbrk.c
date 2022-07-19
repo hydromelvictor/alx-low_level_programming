@@ -7,11 +7,15 @@
 */
 char *_strpbrk(char *s, char *accept)
 {
-int i = 0, j = 0, k;
+int i = 0, j = 0, k = 0;
+while (accept[i] != '\0')
+{
+i++;
+}
 while (s[j] != '\0')
 {
 k = 0;
-while (accept[k] != '\0')
+while (k <= i)
 {
 if (s[j] == accept[k])
 {
@@ -21,5 +25,5 @@ k++;
 }
 j++;
 }
-return (0);
+return (s + j);
 }
