@@ -16,5 +16,9 @@ return (s + i);
 }
 i++;
 }
+if (*s == c)
+{
+return (s);
+}
 return (0);
 }
