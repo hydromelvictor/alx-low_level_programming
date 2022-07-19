@@ -6,15 +6,13 @@
 void print_chessboard(char (*a)[8])
 {
 int i = 0, j = 0, k = 0;
-while (**(a + k) != '\0')
+while (i < 8)
 {
-k++;
-}
-while (**(a + i) != '\0')
-{
-for (j = 0; j < 8; j++)
+j = 0;
+while (j < 8)
 {
 _putchar(a[i][j]);
+j++;
 }
 _putchar(10);
 i++;
