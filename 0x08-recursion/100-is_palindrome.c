@@ -34,7 +34,8 @@ else
 return (0);
 }
 }
-else {
+else
+{
 {
 return (1);
 }

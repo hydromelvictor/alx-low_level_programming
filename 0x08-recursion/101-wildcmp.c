@@ -7,7 +7,7 @@
 */
 int cmp(char a, char b)
 {
-if(a == '*' || b == '*')
+if (a == '*' || b == '*')
 {
 return (1);
 }
@@ -24,11 +24,11 @@ return (0);
 */
 int wildcmp(char *s1, char *s2)
 {
-if(cmp(*s1, *s2) == 1)
+if (cmp(*s1, *s2) == 1)
 {
 s1++;
 s2++;
-return wildcmp(s1, s2);
+return (wildcmp(s1, s2));
 }
 else
 {
