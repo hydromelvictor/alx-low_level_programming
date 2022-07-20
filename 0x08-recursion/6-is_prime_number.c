@@ -15,7 +15,7 @@ if (n % i == 0 && i > 1 && i < n)
 {
 return (0);
 }
-return (rec(n, i + 1));
+return 1;
 }
 /**
 *is_prime_number - returns 1 if the input integer is
