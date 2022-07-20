@@ -9,11 +9,9 @@ if (*s == '\0')
 {
 return;
 }
-if (*(s + 1) == '\0')
-{
-_putchar(*s);
-}
 s++;
 _print_rev_recursion(s);
+s--;
+_putchar(*s);
 }
 
