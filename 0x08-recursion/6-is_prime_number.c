@@ -1,11 +1,21 @@
 #include "main.h"
-int rec(int n)
+/**
+*rec - function simple
+*@n: parameter
+*@i: parameter
+*Return: integer
+*/
+int rec(int n, int i)
 {
-if(n > 1)
+if (n <= 1)
 {
-return (n - 1);
+return (0);
 }
-return 2;
+if (n % i == 0 && i > 1)
+{
+return (0);
+}
+return (rec(n, i + 1));
 }
 /**
 *is_prime_number - returns 1 if the input integer is
@@ -15,9 +25,5 @@ return 2;
 */
 int is_prime_number(int n)
 {
-if(n % rec(rec(n)) == 0 && n )
-{
-return (1);
-}
-return (0);
+return (rec(n, 1));
 }
