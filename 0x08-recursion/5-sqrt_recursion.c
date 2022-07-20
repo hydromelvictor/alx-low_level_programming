@@ -8,7 +8,11 @@
 */
 int _pow(int x, int n)
 {
-if (n == 0 && x != 0)
+if (x == 1)
+{
+return (1);
+}
+if (x < 0 || n == x)
 {
 return (-1);
 }
@@ -16,10 +20,7 @@ if (x == n * n)
 {
 return (n);
 }
-else
-{
-return (_pow(x, n - 1));
-}
+return (_pow(x, n + 1));
 }
 /**
 *_sqrt_recursion - returns the natural square root
@@ -29,16 +30,5 @@ return (_pow(x, n - 1));
 */
 int _sqrt_recursion(int n)
 {
-if (n == 1)
-{
-return (1);
-}
-if (n < 0)
-{
-return (-1);
-}
-else
-{
-return (_pow(n, n));
-}
+return (_pow(n, 1));
 }
