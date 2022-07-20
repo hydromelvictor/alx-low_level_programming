@@ -11,7 +11,7 @@ if (n <= 1)
 {
 return (0);
 }
-if (n % i == 0 && i > 1)
+if (n % i == 0 && i > 1 && i < n)
 {
 return (0);
 }
