@@ -1,22 +1,5 @@
 #include "main.h"
 /**
-**cmp - comparation
-*@a: parameter
-*@b: parameter
-*Return: integer
-*/
-int cmp(char a, char b)
-{
-if (a == '*' || b == '*')
-{
-return (1);
-}
-else
-{
-return (0);
-}
-}
-/**
 *wildcmp - compare strings
 *@s1: parameter
 *@s2: parameter
@@ -24,7 +7,11 @@ return (0);
 */
 int wildcmp(char *s1, char *s2)
 {
-if (cmp(*s1, *s2) == 1)
+if (*s1 == '*' || *s2 == '*')
+{
+return (1);
+}
+if(s1 == s2)
 {
 s1++;
 s2++;
