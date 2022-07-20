@@ -39,6 +39,6 @@ return (-1);
 }
 else
 {
-return (_pow(n, n / 2));
+return (_pow(n, n));
 }
 }
