@@ -7,7 +7,7 @@
 *@argv: parameter
 *Return: always 0 or 1
 */
-int main(int argc, int *argv[])
+int main(int argc, char *argv[])
 {
 	if (argc == 3)
 	{
