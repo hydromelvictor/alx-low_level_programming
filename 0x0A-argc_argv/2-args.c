@@ -9,15 +9,9 @@
 int main(int argc, char *argv[])
 {
 int i;
-printf("%s", argv[0]);
-if (argc > 1)
+for (i = 0; i < argc; i++)
 {
-i = 1;
-while (argv[i] != '\0')
-{
-printf("\n%s", argv[i]);
-i++;
-}
+	printf("%s\n", argv[i]);
 }
 return (0);
 }
