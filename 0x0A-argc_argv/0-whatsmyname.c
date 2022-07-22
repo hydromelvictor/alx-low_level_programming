@@ -7,10 +7,11 @@
 */
 int main(int argc, int *argv[])
 {
-while (*argv[0] != '\0')
+	int i = 0;
+while (*(argv[0]) != '\0')
 {
-	_putchar(*argv[0]);
-	argv[0]++;
+	_putchar(*(argv[0] + i) + '0');
+	i++;
 }
 _putchar(10);
 return (0);
