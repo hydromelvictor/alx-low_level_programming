@@ -1,14 +1,14 @@
 #include "main.h"
+#include <stdio.h>
 /**
 *main - print arguments numbers
 *@argc: parameter
 *@argv: parameter
 *Return: 0 always
 */
-int main(int argc, int *argv[])
+int main(int argc, char *argv[])
 {
-_putchar((argc - 1) + '0');
-_putchar(10);
+	printf("%d\n", argc - 1);
 return (0);
 }
 
