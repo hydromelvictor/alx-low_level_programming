@@ -9,7 +9,7 @@
 */
 int main(int argc, int *argv[])
 {
-	if (argc == 2)
+	if (argc == 3)
 	{
 		printf("%d", atoi(argv[1]) * atoi(argv[2]));
 		return (0);
