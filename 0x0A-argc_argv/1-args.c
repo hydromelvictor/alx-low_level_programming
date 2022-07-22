@@ -6,7 +6,7 @@
 *@argv: parameter
 *Return: 0 always
 */
-int main(int argc __attribute__((unused)), char *argv[])
+int main(int argc, char *argv[] __attribute__((unused)))
 {
 	if (argc > 1)
 	{
