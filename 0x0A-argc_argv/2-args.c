@@ -1,41 +1,23 @@
 #include "main.h"
-/**
-*_str - prints strings
-*@c: parameter
-*Return: 0 always
-*/
-int _str(char *c)
-{
-	while (*c != '\0')
-        {
-                _putchar(*c);
-                c++;
-        }
-	return (0);
-}
+#include <stdio.h>
 /**
 *main - prints all arguments
 *@argc: parameter
 *@argv: parameter
 *Return: 0 always
 */
-int main(int argc, int *argv[])
+int main(int argc, char *argv[])
 {
-	int i = 0;
-	_str(arg[0]);
-	if (argc > 1)
-	{
-		i = 1;
-		while (i < argc)
-		{
-			if (i < arg - 1)
-			{
-				_putchar(10);
-			}
-			_str(arg[i]);
-			i++;
-		}
-	}
-	return (0);
+printf("%s", argv[0]);
+if (argc > 1)
+{
+int i = 1;
+while (i < argc)
+{
+printf("\n%s", argv[i]);
+i++;
+}
+}
+return (0);
 }
 
