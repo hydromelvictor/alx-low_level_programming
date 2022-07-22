@@ -1,3 +1,3 @@
 #!/bin/bash
-echo -e 'gcc -c *.c\n ar rc liball.a *.o'
+echo -e 'gcc -c *.c\nar rc liball.a *.o'
 
