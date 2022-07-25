@@ -33,7 +33,6 @@ int **alloc_grid(int width, int height)
                         {
                                 tab[i][j] = 0;
                         }
-			free(tab[i]);
 		}
 		return (tab);
 	}
