@@ -10,7 +10,8 @@
 char *argstostr(int ac, char **av)
 {
 	char **str;
-	unsigned int i = 0, j = 0;
+	unsigned int j;
+	int i;
 	if (ac == 0 || av == NULL)
 	{
 		return (NULL);
