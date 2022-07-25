@@ -20,7 +20,7 @@ char *str_concat(char *s1, char *s2)
 		j++;
 	}
 	str = malloc((i + j + 1) * sizeof(int));
-	if (i == 0 && j == 0)
+	if ((i == 0 && j == 0) || str == NULL)
 	{
 		return (NULL);
 	}
