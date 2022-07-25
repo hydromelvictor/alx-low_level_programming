@@ -33,7 +33,7 @@ char *str_concat(char *s1, char *s2)
 		str[i + 1] = '\0';
 		return (str);
 	}
-	else if (s1 == NULL && s2 != NULL)
+	else if (i == 0 && j != 0)
 	{
 		for (k = 0; k <= j; k++)
                 {
