@@ -19,7 +19,7 @@ char *str_concat(char *s1, char *s2)
 	{
 		j++;
 	}
-	s = malloc((i + j + 1) * sizeof(int));
+	str = malloc((i + j + 1) * sizeof(int));
 	if (i == 0 && j == 0)
 	{
 		return (NULL);
