@@ -11,9 +11,12 @@ char *str_concat(char *s1, char *s2)
 {
 	int i = 0, j = 0, k = 0;
 	char *str;
-	while (s1[i] != '\0')
+	if ( s1 != NULL)
 	{
-		i++;
+		while (s1[i] != '\0')
+		{
+			i++;
+		}
 	}
 	while (s2[j] != '\0')
 	{
