@@ -24,7 +24,7 @@ char *str_concat(char *s1, char *s2)
 	{
 		return (NULL);
 	}
-	else if (i != NULL && j == 0)
+	else if (i != 0 && j == 0)
 	{
 		for (k = 0; k <= i; k++)
 		{
