@@ -31,8 +31,8 @@ char *argstostr(int ac, char **av)
 				return (NULL);
 			}
 			k = 0;
-			while (k <= strlen(av[i]))
-			{
+while (k < strlen(av[i]))
+{
 str[i][k] = av[i][k];
 k++;
 }
