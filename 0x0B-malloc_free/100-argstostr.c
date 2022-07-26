@@ -6,26 +6,27 @@
 *argstostr - concatenates all the arguments
 *@ac: parameter
 *@av: parameter
+*Return: character
 */
 char *argstostr(int ac, char **av)
 {
-	char **str;
-	int i = 0;
-	unsigned int k = 0;
-	if (ac == 0 || av == NULL)
-	{
-		return (NULL);
-	}
-	else
-	{
-		str = malloc(ac * sizeof(char) + 1);
-		if (str == NULL)
-		{
-			return (NULL);
-		}
-while (i <= ac)
+char **str;
+int i = 0;
+unsigned int k = 0;
+if (ac == 0 || av == NULL)
 {
-str[i] = malloc(strlen(av[i])*sizeof(char));
+return (NULL);
+}
+else
+{
+str = malloc(ac * sizeof(char) + 1);
+if (str == NULL)
+{
+return (NULL);
+}
+while (i < ac)
+{
+str[i] = malloc(strlen(av[i]) * sizeof(char));
 if (str[i] == NULL)
 {
 return (NULL);
