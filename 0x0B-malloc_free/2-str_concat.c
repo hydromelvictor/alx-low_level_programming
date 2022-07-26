@@ -32,7 +32,24 @@ char *str_concat(char *s1, char *s2)
 	{
 		return (NULL);
 	}
-	else if (s2 == NULL && s1 != NULL)
+	while (k < (i + j))
+	{
+		if (k < i)
+		{
+			str[k] = s1[k];
+		}
+		if (k >= i)
+		{
+			str[k] = s2[s];
+			s++;
+		}
+		k++;
+	}
+	str[k] = '\0';
+	return (str);
+}
+/*
+	if (s2 == NULL && s1 != NULL)
 	{
 		for (k = 0; k <= i; k++)
 		{
@@ -65,3 +82,4 @@ char *str_concat(char *s1, char *s2)
 		return (str);
 	}
 }
+
