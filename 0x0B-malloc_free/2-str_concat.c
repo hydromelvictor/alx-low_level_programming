@@ -34,11 +34,11 @@ char *str_concat(char *s1, char *s2)
 	}
 	while (k < (i + j))
 	{
-		if (k < i)
+		if (k < i && s1 != " ")
 		{
 			str[k] = s1[k];
 		}
-		if (k >= i)
+		if (k >= i && s2 != " ")
 		{
 			str[k] = s2[s];
 			s++;
