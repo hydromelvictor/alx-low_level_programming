@@ -9,7 +9,7 @@
 */
 char *str_concat(char *s1, char *s2)
 {
-	int i = 0, j = 0, k = 0, f = 0;
+	int i = 0, j = 0, k = 0, s = 0;
 	char *str;
 	if (s1 == NULL)
 	{
@@ -48,6 +48,7 @@ char *str_concat(char *s1, char *s2)
 	str[k] = '\0';
 	return (str);
 }
+
 /*
 	if (s2 == NULL && s1 != NULL)
 	{
@@ -82,4 +83,4 @@ char *str_concat(char *s1, char *s2)
 		return (str);
 	}
 }
-
+*/
