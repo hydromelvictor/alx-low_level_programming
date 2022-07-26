@@ -33,7 +33,7 @@ char **strtow(char *str)
 		for (j = 0; j < f; j++)
 		{
 			u = k;
-			while (str[s] != " ")
+			while (str[s] != ' ')
                 	{       
                         	s++;
                 	}
