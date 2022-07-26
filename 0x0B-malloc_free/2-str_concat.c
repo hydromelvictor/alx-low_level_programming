@@ -9,7 +9,7 @@
 */
 char *str_concat(char *s1, char *s2)
 {
-	int i = 0, j = 0, k = 0;
+	int i = 0, j = 0, k = 0, f = 0;
 	char *str;
 	while (s1 != NULL && s1[i] != '\0')
 	{
@@ -48,11 +48,12 @@ char *str_concat(char *s1, char *s2)
 		{
 			str[k] = s1[k];
 		}
-		for (;k <= i + j; k++)
+		for (f = 0;f <= j; f++)
 		{
-			str[k + 1] = s2[k - i + 1];
+			str[k + f + 1] = s2[f];
 		}
-		str[k + 1] = '\0';
+		f = k + f + 1;
+		str[f + 1] = '\0';
 		return (str);
 	}
 }
