@@ -18,14 +18,14 @@ char *argstostr(int ac, char **av)
 	}
 	else
 	{
-		str = malloc(ac * sizeof(*str));
+		str =(char **) malloc(ac * sizeof(*str));
 		if (str == NULL)
 		{
 			return (NULL);
 		}
 		for (i = 0; i < ac; i++)
 		{
-			str[i] = malloc((strlen(av[i]) + 1) * sizeof(**str));
+			str[i] =(char *) malloc((strlen(av[i]) + 1) * sizeof(**str));
 			if (str[i] == NULL)
 			{
 				return (NULL);
