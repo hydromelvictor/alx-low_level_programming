@@ -25,17 +25,13 @@ char *argstostr(int ac, char **av)
 		while (i <= ac)
 		{
 			j = 0;
-			while (av[i][j] != '\0')
-			{
-				j++;
-			}
-			str[i] = malloc((j + 1) * sizeof(**str));
+			str[i] = malloc((strlen(av[i]) + 1) * sizeof(**str));
 			if (str[i] == NULL)
 			{
 				return (NULL);
 			}
 			k = 0;
-			while (k <= j)
+			while (k < strlen(av[i]))
 			{
 				str[i][k] = av[i][k];
 				k++;
