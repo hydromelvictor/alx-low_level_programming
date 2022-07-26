@@ -31,15 +31,15 @@ char *argstostr(int ac, char **av)
 				return (NULL);
 			}
 			k = 0;
-			while (k < strlen(av[i]))
+			while (k <= strlen(av[i]))
 			{
 				str[i][k] = av[i][k];
 				k++;
 			}
-			str[i][k] = '\n';
-			i++;
-		}
-		return (*str);
-	}
+str[i][k] = '\n';
+i++;
+}
+return (*str);
+}
 }
 
