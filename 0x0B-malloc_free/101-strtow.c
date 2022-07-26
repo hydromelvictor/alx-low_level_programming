@@ -11,46 +11,46 @@ char **strtow(char *str)
 {
 	int i = 0, j = 0,f = 0, k = 0, s = 0, u = 0;
 	char **tab;
-	if (str == NULL)
+	if (str == NULL || str =="")
 	{
 		return (NULL);
 	}
 	else
 	{
-		while (str[i] != '\0')
+		i = strlen(str);
+		while (str[j] != '\0')
 		{
-			i++;
-			if(str[i] == ' ')
+			if(str[j] == ' ')
 			{
-				f++;
+				j++;
 			}
 		}
-		tab = malloc((f + 1) * sizeof(*tab));
+		tab = malloc((j + 1) * sizeof(char) + 1);
 		if (tab == NULL)
 		{
 			return (NULL);
 		}
-		for (j = 0; j < f; j++)
+		for (f = 0; f <= j; j++)
 		{
 			u = s;
 			while (str[s] != ' ')
                 	{       
                         	s++;
                 	}
-			tab[j] = malloc((s + 1) * sizeof(**tab));
-			if (tab[j] == NULL)
+			tab[f] = malloc(s * sizeof(char));
+			if (tab[f] == NULL)
 			{
 				return (NULL);
 			}
 			for (k = 0; k < s; k++)
 			{
-				tab[j][k] = str[u + k];
+				tab[f][k] = str[u + k];
 			}
-			tab[j][k +1] = '\0';
+			tab[f][k +1] = '\0';
 			s++;
 			u++;
 		}
-		tab[j + 1][1] = '\0';
+		tab[f + 1][1] = '\0';
 		return (tab);
 	}
 }
