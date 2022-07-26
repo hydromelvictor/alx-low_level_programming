@@ -10,7 +10,6 @@
 char **strtow(char *str)
 {
 	int j = 0,f = 0, k = 0, s = 0, u = 0;
-	unsigned int i;
 	char **tab;
 	if (str == NULL)
 	{
@@ -18,7 +17,6 @@ char **strtow(char *str)
 	}
 	else
 	{
-		i = strlen(str);
 		while (str[j] != '\0')
 		{
 			if(str[j] == ' ')
