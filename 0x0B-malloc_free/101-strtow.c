@@ -9,7 +9,7 @@
 */
 char **strtow(char *str)
 {
-	int i = 0, j = 0,f = 0, k = 0, s = 0;
+	int i = 0, j = 0,f = 0, k = 0, s = 0, u = 0;
 	char **tab;
 	if (str == NULL)
 	{
@@ -32,6 +32,7 @@ char **strtow(char *str)
 		}
 		for (j = 0; j < f; j++)
 		{
+			u = s;
 			while (str[s] != ' ')
                 	{       
                         	s++;
@@ -43,9 +44,11 @@ char **strtow(char *str)
 			}
 			for (k = 0; k < s; k++)
 			{
-				tab[j][k] = str[k];
+				tab[j][k] = str[u + k];
 			}
 			tab[j][k +1] = '\0';
+			s++;
+			u++;
 		}
 		tab[j + 1][1] = '\0';
 		return (tab);
