@@ -11,7 +11,7 @@ char **strtow(char *str)
 {
 	int i = 0, j = 0,f = 0, k = 0;
 	char **tab;
-	if (str == NULL || str == '\0')
+	if (str == NULL)
 	{
 		return (NULL);
 	}
