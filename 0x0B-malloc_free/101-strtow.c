@@ -24,7 +24,7 @@ char **strtow(char *str)
 				j++;
 			}
 		}
-		tab = malloc((j + 1) * sizeof(char) + 1);
+		tab = malloc(j * sizeof(char) + 1);
 		if (tab == NULL)
 		{
 			return (NULL);
@@ -36,7 +36,7 @@ char **strtow(char *str)
                 	{       
                         	s++;
                 	}
-			tab[f] = malloc(s * sizeof(char));
+			tab[f] = malloc((s + 1) * sizeof(char));
 			if (tab[f] == NULL)
 			{
 				return (NULL);
