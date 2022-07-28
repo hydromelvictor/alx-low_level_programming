@@ -35,7 +35,7 @@ exit(98);
 }
 i++;
 }
-printf("%lld", (long long)argv[1] * (long long)argv[2]);
+printf("%ld", (long)argv[1] * (long)argv[2]);
 return (0);
 }
 }
