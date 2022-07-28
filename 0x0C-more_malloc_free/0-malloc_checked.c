@@ -6,7 +6,7 @@
 *malloc_checked - allocates memory using malloc
 *@b: parameter
 */
-void *malloc_checked(unsignedint b)
+void *malloc_checked(unsigned int b)
 {
 	int *p = malloc(sizoef(unsigned int));
 	if (p == NULL)
