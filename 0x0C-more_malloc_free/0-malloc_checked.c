@@ -11,8 +11,7 @@ void *malloc_checked(unsigned int b)
 	int *p = malloc(sizoef(unsigned int));
 	if (p == NULL)
 	{
-		p = 98;
-		return;
+		return (98);
 	}
 }
 
