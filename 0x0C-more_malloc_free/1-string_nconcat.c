@@ -25,14 +25,14 @@ if (str == NULL)
 {
 return (NULL);
 }
-for (k = 0; k < i; k++)
+for (k = 0; k <= i; k++)
 {
 str[k] = s1[k];
 }
 j = (n >= j) ? j : n;
 s = 0;
 k = k + 1;
-for (s = 0; s < j; s++)
+for (s = 0; s <= j; s++)
 {
 str[k + s] = s2[s];
 }
