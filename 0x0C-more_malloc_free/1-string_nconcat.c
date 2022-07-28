@@ -21,22 +21,20 @@ return (NULL);
 }
 if (i != 0)
 {
-while (k <= i)
+for (k = 0; k < i; k++)
 {
 str[k] = s1[k];
-k++;
 }
 }
-if (p >= i + j || p >= i + n)
+if (j != 0)
 {
 s = 0;
-while (k < i + j)
+k = k + 1;
+for (s = 0; s < j; s++)
 {
-str[k] = s2[s];
-k++;
-s++;
+str[k + s] = s2[s];
 }
 }
-str[k] = '\0';
+str[k++] = '\0';
 return (str);
 }
