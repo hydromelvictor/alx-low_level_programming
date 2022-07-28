@@ -13,16 +13,15 @@ if (min > max)
 {
 return (NULL);
 }
-plage = (min < 0 && max < 0) ? ((-min) - (-max)) + 1 :
-(min > 0 && max >= 0) ? ((-min) + max) + 2 : min - max + 1;
+plage = max - min + 1;
 nbre = malloc(plage * sizeof(int));
 if (nbre == NULL)
 {
 return (NULL);
 }
-for (i = min; i <= max; i++)
+for (i = 0; i <= plage; i++)
 {
-nbre[i] = i;
+nbre[i] = min + i;
 }
 return (nbre);
 }
