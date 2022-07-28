@@ -11,14 +11,21 @@
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 unsigned int i;
-int *tab = malloc(nmemb * size);
-if (tab == NULL)
+void *p;
+char *str;
+if (nmemb == 0 || size == 0)
 {
 return (NULL);
 }
-for (i = 0; i < nmemb; i++)
+p = malloc(nmemb * size);
+if (p == NULL)
 {
-tab[i] = 0;
+return (NULL);
 }
-return (tab);
+str = p;
+for (i = 0; i < nmemb * size; i++)
+{
+str[i] = '\0';
+}
+return (str);
 }
