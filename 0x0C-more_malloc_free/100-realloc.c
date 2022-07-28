@@ -47,7 +47,7 @@ size = min(old_size, new_size);
 s = ptr;
 if (new_size > old_size)
 {
-for (i = 0; i < old_size; i++)
+for (i = 0; i <= old_size; i++)
 {
 str[i] = s[i];
 }
@@ -55,7 +55,7 @@ return (str);
 }
 else
 {
-for (i = 0; i < size; i++)
+for (i = 0; i <= size; i++)
 {
 str[i] = s[i];
 }
