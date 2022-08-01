@@ -9,7 +9,6 @@ void print_dog(struct dog *d)
 {
 if (d == NULL)
 {
-printf("%s", "nothing");
 return;
 }
 else
