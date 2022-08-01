@@ -24,6 +24,13 @@ if (d->owner == NULL)
 d->owner = str;
 printf("Owner: %s", "(nil)");
 }
+if(!d->age)
+{
+printf("Name: %s\nAge: %s\nOwner: %s", d->name, str, d->owner);
+}
+else
+{
 printf("Name: %s\nAge: %f\nOwner: %s", d->name, d->age, d->owner);
+}
 }
 }
