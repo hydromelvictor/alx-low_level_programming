@@ -1,0 +1,1 @@
+strust and typdef
