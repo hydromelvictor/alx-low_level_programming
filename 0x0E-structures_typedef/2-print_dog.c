@@ -11,6 +11,7 @@ char str[6] = "(nil)";
 if (d == NULL)
 {
 printf("nothing");
+return;
 }
 else
 {
