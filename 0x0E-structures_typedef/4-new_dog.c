@@ -15,6 +15,8 @@ if(wouh == NULL)
 {
 return (NULL);
 }
-init_dog(wouh, name, age, owner);
+wouh->name = name;
+wouh->age = age;
+wouh->owner = owner;
 return (wouh);
 }
