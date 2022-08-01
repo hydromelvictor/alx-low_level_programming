@@ -15,8 +15,8 @@ if (wouh == NULL)
 {
 return (NULL);
 }
-*(wouh)->name = *name;
+wouh->name = name;
 wouh->age = age;
-*(wouh)->owner = *owner;
+wouh->owner = owner;
 return (wouh);
 }
