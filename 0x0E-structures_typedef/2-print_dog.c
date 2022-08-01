@@ -19,25 +19,11 @@ if (d->name == NULL)
 d->name = str;
 printf("Name: %s\n", "(nil)");
 }
-/*
-else
-{
-printf("Name: %s\n", d->name);
-}
-
-printf("Age: %f\n", d->age);
-*/
 if (d->owner == NULL)
 {
 d->owner = str;
 printf("Owner: %s", "(nil)");
 }
-/*
-else
-{
-printf("Owner: %s", d->owner);
-}
-*/
 printf("Name: %s\nAge: %f\nOwner: %s", d->name, d->age, d->owner);
 }
 }
