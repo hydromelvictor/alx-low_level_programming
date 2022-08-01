@@ -11,6 +11,10 @@
 dog_t *new_dog(char *name, float age, char *owner)
 {
 dog_t *wouh = malloc(sizeof(dog_t));
+if(wouh == NULL)
+{
+return (NULL);
+}
 init_dog(wouh, name, age, owner);
 return (wouh);
 }
