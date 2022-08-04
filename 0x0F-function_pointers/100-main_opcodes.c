@@ -26,7 +26,7 @@ if (argv[i][0] != str[j] || argv[i][1] != str[j])
 k++;
 }
 }
-if (k >=16)
+if (k >= 16)
 {
 printf("Error\n");
 exit(1);
