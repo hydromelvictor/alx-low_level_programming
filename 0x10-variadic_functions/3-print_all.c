@@ -24,8 +24,7 @@ void print_all(const char * const format, ...)
 {
 va_list list;
 int i = 0;
-char *str = malloc(sizeof(char));
-if (format == NULL || str == NULL)
+if (format == NULL)
 {
 printf("\n");
 return;
@@ -37,26 +36,14 @@ while (format[i] != '\0')
 if (format[i] == 'c' || format[i] == 's')
 {
 (*show[2])(list);
-if (format[i + 1] != '\0')
-{
-printf(", ");
-}
 }
 if (format[i] == 'i')
 {
 (*show[0])(list);
-if (format[i + 1] != '\0')
-{
-printf(", ");
-}
 }
 if (format[i] == 'f')
 {
 (*show[1])(list);
-if (format[i + 1] != '\0')
-{
-printf(", ");
-}
 }
 i++;
 }
