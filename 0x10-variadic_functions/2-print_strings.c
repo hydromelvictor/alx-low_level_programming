@@ -33,10 +33,10 @@ printf("%s%s", str, separator);
 str = va_arg(list, char *);
 if (str == NULL)
 {
-printf("%s%s\n", "nil", separator);
+printf("%s\n", "nil");
 }
 else
 {
-printf("%s%s\n", str, separator);
+printf("%s\n", str);
 }
 }
