@@ -13,6 +13,7 @@ va_list list;
 unsigned int i;
 if (n == 0 || separator == NULL)
 {
+    printf("\n");
 return;
 }
 va_start(list, n);
@@ -33,6 +34,6 @@ printf("%s%s", "nil", separator);
 }
 else
 {
-printf("%s%s", va_arg(list, char *), separator);
+printf("%s%s\n", va_arg(list, char *), separator);
 }
 }
