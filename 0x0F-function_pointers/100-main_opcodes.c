@@ -1,7 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
-#include "function_pointers.h"
 /**
  * main - opcodes
  * @argc: parameter
