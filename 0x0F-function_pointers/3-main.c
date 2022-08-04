@@ -25,4 +25,5 @@ exit(100);
 }
 (*get_op_func(s))(a, b);
 }
+return (0);
 }
