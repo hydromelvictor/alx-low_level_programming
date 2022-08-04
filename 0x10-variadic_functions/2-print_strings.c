@@ -11,28 +11,28 @@ void print_strings(const char *separator, const unsigned int n, ...)
 {
 va_list list;
 unsigned int i;
-char *str = malloc(sizeof(char));
-if (str == NULL)
+if (n == 0 || separator == NULL)
 {
 return;
 }
 va_start(list, n);
-if (separator == NULL)
-{
-return;
-}
 for (i = 0; i < (n - 1); i++)
 {
-str = va_arg(list, char *);
-if (str == NULL)
+if (va_arg(list, char *) == NULL)
 {
-str = "nil";
+printf("%s%s", "nil", separator);
 }
-printf("%s%s", str, separator);
-}
-if (str == NULL)
+else
 {
-str = "nil";
+printf("%s%s", va_arg(list, char *), separator);
 }
-printf("%s\n", va_arg(list, char *));
+}
+if (va_arg(list, char *) == NULL)
+{
+printf("%s%s", "nil", separator);
+}
+else
+{
+printf("%s%s", va_arg(list, char *), separator);
+}
 }
