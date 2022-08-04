@@ -12,34 +12,9 @@ void print_strings(const char *separator, const unsigned int n, ...)
 va_list list;
 unsigned int i;
 char *str = malloc(sizeof(char));
-if (n == 0 || str == NULL)
+if (n == 0 || separator == NULL || str == NULL)
 {
 printf("\n");
-return;
-}
-if (separator == NULL)
-{
-for(i = 0; i < (n - 1); i++)
-{
-str = va_arg(list, char *);
-if (str == NULL)
-{
-printf("%s\n", "nil");
-}
-else
-{
-printf("%s\n", str);
-}
-}
-str = va_arg(list, char *);
-if (str == NULL)
-{
-printf("%s\n", "nil");
-}
-else
-{
-printf("%s\n", str);
-}
 return;
 }
 va_start(list, n);
