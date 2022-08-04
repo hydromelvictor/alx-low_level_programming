@@ -20,7 +20,12 @@ return;
 va_start(list, n);
 if (separator == NULL)
 {
-printf("\n");
+for (i = 0; i < n - 1; i++)
+{
+printf("%d ", va_arg(list, unsigned int));
+}
+printf("%d\n", va_arg(list, unsigned int));
+va_end(list);
 return;
 }
 for (i = 0; i < n - 1; i++)
