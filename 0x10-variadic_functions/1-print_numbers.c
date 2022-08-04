@@ -24,7 +24,7 @@ return;
 }
 for (i = 0; i < n - 1; i++)
 {
-printf("%d%s ", va_arg(list, unsigned int), separator);
+printf("%d%s", va_arg(list, unsigned int), separator);
 }
 printf("%d\n", va_arg(list, unsigned int));
 }
