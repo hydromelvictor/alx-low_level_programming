@@ -16,6 +16,30 @@ if (n == 0 || separator == NULL)
 printf("\n");
 return;
 }
+if (separator == NULL)
+{
+for (i = 0; i < (n - 1); i++)
+{
+if (va_arg(list, char *) == NULL)
+{
+printf("%s", "nil");
+}
+else
+{
+printf("%s", va_arg(list, char *));
+}
+}
+if (va_arg(list, char *) == NULL)
+{
+printf("%s\n", "nil");
+}
+else
+{
+printf("%s\n", va_arg(list, char *));
+}
+va_end(list);
+return;
+}
 va_start(list, n);
 for (i = 0; i < (n - 1); i++)
 {
