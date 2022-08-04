@@ -3,8 +3,9 @@
 #include <stdarg.h>
 #include "variadic_functions.h"
 /**
- * @brief 
- * 
+ * print_numbers - print the nombres
+ * @separator: parameter
+ * @n: parameter
  */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
@@ -13,7 +14,7 @@ unsigned int i;
 va_start(list, n);
 if (n == 0)
 {
-    printf("\n");
+printf("\n");
 return;
 }
 va_start(list, n);
@@ -27,4 +28,5 @@ for (i = 0; i < n - 1; i++)
 printf("%d%s", va_arg(list, unsigned int), separator);
 }
 printf("%d\n", va_arg(list, unsigned int));
+va_end(list);
 }
