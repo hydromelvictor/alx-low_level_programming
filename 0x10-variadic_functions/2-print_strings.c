@@ -12,12 +12,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 va_list list;
 unsigned int i;
 char *str = malloc(sizeof(char));
-if (str == NULL)
-{
-printf("\n");
-return;
-}
-if (n == 0 || separator == NULL)
+if (n == 0 || separator == NULL || str == NULL)
 {
 printf("\n");
 return;
@@ -38,10 +33,10 @@ printf("%s%s", str, separator);
 str = va_arg(list, char *);
 if (str == NULL)
 {
-printf("%s%s", "nil", separator);
+printf("%s%s\n", "nil", separator);
 }
 else
 {
-printf("%s%s", str, separator);
+printf("%s%s\n", str, separator);
 }
 }
