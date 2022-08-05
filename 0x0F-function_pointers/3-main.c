@@ -23,7 +23,15 @@ if ((*s == '/' || *s == '%') && b == 0)
 printf("Error\n");
 exit(100);
 }
-(*get_op_func(s))(a, b);
-}
+if (*get_op_func != NULL)
+{
+(get_op_func(s))(a, b);
 return (0);
+}
+else
+{
+printf("Error\n");
+exit(99);
+}
+}
 }

@@ -17,13 +17,12 @@ op_t ops[] = {
 {NULL, NULL}
 };
 int i = 0;
-while (i < 5)
+while (i < 6)
 {
 if (s == ops[i].op)
 {
 return (ops[i].f);
 }
 }
-printf("Error\n");
-exit(99);
+return (ops[5].f);
 }
