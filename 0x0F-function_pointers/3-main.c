@@ -31,7 +31,7 @@ exit(100);
 if (*get_op_func(s) == NULL)
 {
 printf("\n");
-exit(99));
+exit(99);
 }
 (*get_op_func(s))(a, b);
 printf("\n");
