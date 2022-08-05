@@ -4,9 +4,9 @@
 #include "variadic_functions.h"
 /**
  * start - print with no separator
- * 
- * @list: parameter 
- * @n: parameter 
+ *
+ * @list: parameter
+ * @n: parameter
  */
 void start(va_list list, unsigned int n)
 {
@@ -27,7 +27,7 @@ printf("%s", str);
 str = va_arg(list, char *);
 if (str == NULL)
 {
-printf("%s\n", "nil");
+printf("%s\n", "(nil)");
 }
 else
 {
