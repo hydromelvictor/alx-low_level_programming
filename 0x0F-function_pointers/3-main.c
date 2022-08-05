@@ -18,12 +18,18 @@ else
 {
 int a = atoi(argv[1]), b = atoi(argv[3]);
 char *s = argv[2];
+if(*s != '+'  && *s != '-' && *s != '/'  && *s != '%')
+{
+printf("Error\n");
+exit(99);
+}
 if ((*s == '/' || *s == '%') && b == 0)
 {
 printf("Error\n");
 exit(100);
 }
 (*get_op_func(s))(a, b);
+printf("\n");
 }
 return (0);
 }

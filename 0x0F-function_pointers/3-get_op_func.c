@@ -24,6 +24,5 @@ if (s == ops[i].op)
 return (ops[i].f);
 }
 }
-printf("Error\n");
-exit(99);
+return (ops[5].f);
 }
