@@ -26,7 +26,6 @@ exit(100);
 if (*get_op_func != NULL)
 {
 (get_op_func(s))(a, b);
-return (0);
 }
 else
 {
@@ -34,4 +33,5 @@ printf("Error\n");
 exit(99);
 }
 }
+return (0);
 }
