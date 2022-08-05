@@ -33,6 +33,7 @@ else
 {
 printf("%s\n", str);
 }
+va_end(list);
 }
 /**
  * print_strings - strings print
@@ -44,7 +45,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 va_list list;
 unsigned int i;
 char *str = malloc(sizeof(char));
-if (n == 0 || separator == NULL || str == NULL)
+if (n == 0 || str == NULL)
 {
 printf("\n");
 return;
