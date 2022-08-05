@@ -28,6 +28,10 @@ if ((*s == '/' || *s == '%') && b == 0)
 printf("Error\n");
 exit(100);
 }
+if(*get_op_func == NULL)
+{
+return (0);
+}
 (*get_op_func(s))(a, b);
 printf("\n");
 }
