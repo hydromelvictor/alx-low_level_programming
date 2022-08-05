@@ -3,6 +3,38 @@
 #include <stdarg.h>
 #include "variadic_functions.h"
 /**
+ * start - print with no separator
+ * 
+ * @list: parameter 
+ * @n: parameter 
+ */
+void start(va_list list, unsigned int n)
+{
+unsigned int i;
+char *str = malloc(sizeof(char));
+for (i = 0; i < (n - 1); i++)
+{
+str = va_arg(list, char *);
+if (str == NULL)
+{
+printf("%s", "(nil)");
+}
+else
+{
+printf("%s", str);
+}
+}
+str = va_arg(list, char *);
+if (str == NULL)
+{
+printf("%s\n", "nil");
+}
+else
+{
+printf("%s\n", str);
+}
+}
+/**
  * print_strings - strings print
  * @separator: parameter
  * @n: parameter
@@ -18,12 +50,17 @@ printf("\n");
 return;
 }
 va_start(list, n);
+if (separator == NULL)
+{
+start(list, n);
+return;
+}
 for (i = 0; i < (n - 1); i++)
 {
 str = va_arg(list, char *);
 if (str == NULL)
 {
-printf("%s%s", "nil", separator);
+printf("%s%s", "(nil)", separator);
 }
 else
 {
@@ -33,7 +70,7 @@ printf("%s%s", str, separator);
 str = va_arg(list, char *);
 if (str == NULL)
 {
-printf("%s\n", "nil");
+printf("%s\n", "(nil)");
 }
 else
 {

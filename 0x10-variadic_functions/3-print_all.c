@@ -8,7 +8,7 @@ printf("%d", va_arg(list, int));
 }
 void variant(va_list list)
 {
-printf("%lf", va_arg(list, double));
+printf("%f", va_arg(list, double));
 }
 void word(va_list list)
 {
@@ -36,14 +36,26 @@ while (format[i] != '\0')
 if (format[i] == 'c' || format[i] == 's')
 {
 (*show[2])(list);
+if (format[i + 1] != '\0')
+{
+printf(", ");
+}
 }
 if (format[i] == 'i')
 {
 (*show[0])(list);
+if (format[i + 1] != '\0')
+{
+printf(", ");
+}
 }
 if (format[i] == 'f')
 {
 (*show[1])(list);
+if (format[i + 1] != '\0')
+{
+printf(", ");
+}
 }
 i++;
 }
