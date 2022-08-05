@@ -24,5 +24,4 @@ if (s == ops[i].op)
 return (ops[i].f);
 }
 }
-return (ops[5].f);
 }
