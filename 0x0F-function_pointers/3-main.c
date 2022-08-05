@@ -18,7 +18,7 @@ else
 {
 int a = atoi(argv[1]), b = atoi(argv[3]);
 char *s = argv[2];
-if(*s != '+'  && *s != '-' && *s != '/'  && *s != '%')
+if (*s != '+'  && *s != '-' && *s != '/'  && *s != '%')
 {
 printf("Error\n");
 exit(99);
