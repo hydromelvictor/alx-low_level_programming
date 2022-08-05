@@ -2,22 +2,37 @@
 #include <stdlib.h>
 #include <stdarg.h>
 #include "variadic_functions.h"
+/**
+ * entier - function
+ *
+ * @list: parameter
+ */
 void entier(va_list list)
 {
 printf("%d", va_arg(list, int));
 }
+/**
+ * variant - function
+ *
+ * @list: parameter
+ */
 void variant(va_list list)
 {
-printf("%f", va_arg(list, double));
+printf("%f", va_arg(list, float));
 }
+/**
+ * word - function
+ *
+ * @list: parameter
+ */
 void word(va_list list)
 {
 printf("%s", va_arg(list, char *));
 }
 /**
  * print_all - print anything
- * 
- * @format: parameter 
+ *
+ * @format: parameter
  * 
  */
 void print_all(const char * const format, ...)
