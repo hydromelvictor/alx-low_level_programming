@@ -16,6 +16,10 @@ if (end == NULL || start == NULL)
 {
 return (NULL);
 }
+if (head == NULL)
+{
+return (add_node(head, str));
+}
 start = *head;
 while (start)
 {
