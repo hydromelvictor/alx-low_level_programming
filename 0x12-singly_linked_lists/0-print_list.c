@@ -62,9 +62,10 @@ else
 {
 jet(start);
 }
-start = start->next;
-count++;
 _putchar(10);
+count++;
+start = start->next;
 }
+free(start);
 return (count);
 }
