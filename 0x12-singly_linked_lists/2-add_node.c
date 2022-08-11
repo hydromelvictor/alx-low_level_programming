@@ -16,6 +16,10 @@ if (new == NULL)
 {
 return (NULL);
 }
+if (str == NULL)
+{
+return (NULL);
+}
 new->str = strdup(str);
 new->len = strlen(str);
 new->next = *head;
