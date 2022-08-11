@@ -16,7 +16,14 @@ if (new == NULL)
 {
 return (NULL);
 }
+if (str == NULL)
+{
+strcpy(new->str, "(nil)");
+}
+else
+{
 new->str = strdup(str);
+}
 new->len = strlen(str);
 new->next = *head;
 *head = new;
