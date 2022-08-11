@@ -22,15 +22,16 @@ _putchar(')');
  *
  * @p: parameter
  */
-void jet(list_t *p)
+void jet(const list_t *p)
 {
+int i = 0;
 _putchar('[');
 number(p->len);
 _putchar(']');
-while (*p->str)
+while (p->str[i])
 {
-_putchar(*p->str);
-p->str++;
+_putchar(p->str[i]);
+i++;
 }
 }
 /**
@@ -42,30 +43,23 @@ p->str++;
 size_t print_list(const list_t *h)
 {
 size_t count = 0;
-list_t *start = malloc(sizeof(list_t));
-if (start == NULL)
-{
-return (count);
-}
 if (h == NULL)
 {
 return (count);
 }
-*start = *h;
-while (start != NULL)
+while (h != NULL)
 {
-if (start->str == NULL)
+if (h->str == NULL)
 {
 show();
 }
 else
 {
-jet(start);
+jet(h);
 }
 _putchar(10);
 count++;
-start = start->next;
+h = h->next;
 }
-free(start);
 return (count);
 }
