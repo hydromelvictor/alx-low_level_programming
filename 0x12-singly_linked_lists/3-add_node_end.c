@@ -17,7 +17,7 @@ if (end == NULL || start == NULL)
 return (NULL);
 }
 start = *head;
-while (start->next)
+while (start)
 {
 start = start->next;
 }
@@ -30,8 +30,7 @@ else
 end->str = strdup(str);
 }
 end->len = strlen(str);
-end->next = NULL;
 start->next = end;
-free(start);
+end->next = NULL;
 return (end);
 }
