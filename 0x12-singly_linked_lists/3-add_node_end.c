@@ -17,9 +17,7 @@ if (end == NULL || start == NULL)
 return (NULL);
 }
 if (head == NULL)
-{
-return (add_node(head, str));
-}
+end = add_node(head, str);
 else
 {
 start = *head;
@@ -28,9 +26,7 @@ while (start)
 start = start->next;
 }
 if (str == NULL)
-{
 strcpy(end->str, "(nil)");
-}
 else
 {
 end->str = strdup(str);
