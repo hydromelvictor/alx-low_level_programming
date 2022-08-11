@@ -17,7 +17,7 @@ if (end == NULL || start == NULL)
 return (NULL);
 }
 start = *head;
-while (start->next != NULL)
+while (start->next)
 {
 start = start->next;
 }
