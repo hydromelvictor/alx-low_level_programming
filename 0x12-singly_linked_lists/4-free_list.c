@@ -12,10 +12,9 @@ if (head == NULL)
 {
 return;
 }
+free(head);
 while (head)
 {
-free(head->str);
-free(head);
-head = head->next;
+free(head->next);
 }
 }
