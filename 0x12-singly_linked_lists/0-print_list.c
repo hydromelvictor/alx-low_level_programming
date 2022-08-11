@@ -27,7 +27,7 @@ int i = 0;
 _putchar('[');
 _putchar(p->len + '0');
 _putchar(']');
-while (p->str[i])
+while (p->str[i] != '\0')
 {
 _putchar(p->str[i]);
 i++;
