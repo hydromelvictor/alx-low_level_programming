@@ -18,8 +18,10 @@ return (NULL);
 }
 if (head == NULL)
 {
-return (add_node(head, str));
+add_node(head, str);
 }
+else
+{
 start = *head;
 while (start)
 {
@@ -36,5 +38,6 @@ end->str = strdup(str);
 end->len = strlen(str);
 start->next = end;
 end->next = NULL;
+}
 return (end);
 }
