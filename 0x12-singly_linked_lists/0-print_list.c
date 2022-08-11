@@ -54,7 +54,6 @@ if (h->str == NULL)
 {
 show();
 }
-/*
 else
 {
 jet(h);
@@ -62,8 +61,6 @@ jet(h);
 _putchar(10);
 count++;
 h = h->next;
-*/
 }
-
 return (count);
 }
