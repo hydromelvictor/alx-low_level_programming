@@ -18,9 +18,11 @@ if (head  == NULL)
 return;
 }
 current = head;
-while (current->next != NULL)
+while (head->next != NULL)
 {
 free(current);
-current = current->next;
+head = head->next;
+current = head;
 }
+free(head);
 }
