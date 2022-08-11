@@ -16,11 +16,11 @@ if (cur == NULL || h == NULL)
 return (count);
 }
 *cur = *h;
-while (cur->next)
+while (cur)
 {
 if (cur->str == NULL)
 {
-printf("[0] (nil)");
+printf("[0] (nil)\n");
 }
 else
 {
