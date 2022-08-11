@@ -8,5 +8,9 @@
  */
 void free_list(list_t *head)
 {
+if (head  == NULL)
+{
+return;
+}
 free(head);
 }
