@@ -18,7 +18,7 @@ return (NULL);
 }
 if (head == NULL)
 {
-add_node(head, str);
+return (add_node(head, str));
 }
 else
 {
