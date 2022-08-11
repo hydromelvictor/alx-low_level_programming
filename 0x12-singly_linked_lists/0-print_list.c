@@ -21,12 +21,11 @@ _putchar(')');
  *
  * @p: parameter
  */
-/*
 void jet(const list_t *p)
 {
 int i = 0;
 _putchar('[');
-number(p->len);
+_putchar(p->len + '0');
 _putchar(']');
 while (p->str[i])
 {
@@ -34,7 +33,7 @@ _putchar(p->str[i]);
 i++;
 }
 }
-*/
+
 /**
  * print_list - prints all the elements of a list_t list
  *
