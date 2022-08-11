@@ -8,9 +8,19 @@
  */
 void free_list(list_t *head)
 {
+list_t *current = malloc(sizeof(list_t));
+if (current == NULL)
+{
+return;
+}
 if (head  == NULL)
 {
 return;
 }
-free(head);
+current = head;
+while (current->next != NULL)
+{
+free(current);
+current = current->next;
+}
 }
