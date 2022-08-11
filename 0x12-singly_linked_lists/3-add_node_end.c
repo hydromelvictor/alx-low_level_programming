@@ -15,12 +15,7 @@ if (end == NULL || start == NULL)
 {
 return (NULL);
 }
-if (str == NULL)
-strcpy(end->str, "(nil)");
-else
-{
-end->str = strdup(str);
-}
+end->str = (str == NULL) ? strdup("(nil)") : strdup(str);
 end->len = strlen(str);
 if (head == NULL)
 {
