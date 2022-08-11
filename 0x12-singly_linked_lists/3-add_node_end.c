@@ -15,11 +15,6 @@ if (end == NULL || start == NULL)
 {
 return (NULL);
 }
-start = *head;
-while (start)
-{
-start = start->next;
-}
 if (str == NULL)
 strcpy(end->str, "(nil)");
 else
@@ -27,7 +22,21 @@ else
 end->str = strdup(str);
 }
 end->len = strlen(str);
+if (head == NULL)
+{
+end->len = strlen(str);
+end->next = *head;
+*head = end;
+}
+else
+{
+start = *head;
+while (start)
+{
+start = start->next;
+}
 start->next = end;
 end->next = NULL;
+}
 return (end);
 }
