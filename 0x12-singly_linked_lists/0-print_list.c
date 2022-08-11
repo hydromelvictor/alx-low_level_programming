@@ -2,41 +2,6 @@
 #include "stdio.h"
 #include "stdlib.h"
 /**
- * show - print
- *
- */
-void show(void)
-{
-_putchar('[');
-_putchar(0 + '0');
-_putchar(']');
-_putchar(32);
-_putchar('(');
-_putchar('n');
-_putchar('i');
-_putchar('l');
-_putchar(')');
-}
-/**
- * jet - print
- *
- * @p: parameter
- */
-void jet(const list_t *p)
-{
-int i = 0;
-_putchar('[');
-_putchar(p->len + '0');
-_putchar(']');
-_putchar(32);
-while (p->str[i] != '\0')
-{
-_putchar(p->str[i]);
-i++;
-}
-}
-
-/**
  * print_list - prints all the elements of a list_t list
  *
  * @h: parameter
@@ -55,13 +20,12 @@ while (cur->next)
 {
 if (cur->str == NULL)
 {
-show();
+printf("[0] (nil)");
 }
 else
 {
-jet(cur);
+printf("[%d] %s\n", cur->len, cur->str);
 }
-_putchar(10);
 count++;
 cur = cur->next;
 }
