@@ -10,6 +10,7 @@ void show(void)
 _putchar('[');
 _putchar(0 + '0');
 _putchar(']');
+_putchar(32);
 _putchar('(');
 _putchar('n');
 _putchar('i');
@@ -27,6 +28,7 @@ int i = 0;
 _putchar('[');
 _putchar(p->len + '0');
 _putchar(']');
+_putchar(32);
 while (p->str[i] != '\0')
 {
 _putchar(p->str[i]);
@@ -43,24 +45,25 @@ i++;
 size_t print_list(const list_t *h)
 {
 size_t count = 0;
-if (h == NULL)
+list_t *cur = malloc(sizeof(list_t));
+if (cur == NULL || h == NULL)
 {
 return (count);
 }
-
-while (h != NULL)
+*cur = *h;
+while (cur->next)
 {
-if (h->str == NULL)
+if (cur->str == NULL)
 {
 show();
 }
 else
 {
-jet(h);
+jet(cur);
 }
 _putchar(10);
 count++;
-h = h->next;
+cur = cur->next;
 }
 return (count);
 }
