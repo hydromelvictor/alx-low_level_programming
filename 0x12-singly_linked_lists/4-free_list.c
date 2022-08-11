@@ -18,10 +18,10 @@ if (head  == NULL)
 return;
 }
 current = head;
-while (head->next != NULL)
+while (head != NULL)
 {
-head = head->next;
 free(current);
 current = head;
+head = head->next;
 }
 }
