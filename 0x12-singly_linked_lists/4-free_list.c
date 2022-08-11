@@ -18,6 +18,7 @@ if (head  == NULL)
 return;
 }
 current = head;
+head = head->next;
 while (head != NULL)
 {
 free(current);
