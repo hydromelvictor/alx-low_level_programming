@@ -46,6 +46,7 @@ if (h == NULL)
 {
 return (count);
 }
+/*
 while (h != NULL)
 {
 if (h->str == NULL)
@@ -60,5 +61,6 @@ _putchar(10);
 count++;
 h = h->next;
 }
+*/
 return (count);
 }
