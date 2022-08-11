@@ -20,9 +20,8 @@ return;
 current = head;
 while (head->next != NULL)
 {
-free(current);
 head = head->next;
+free(current);
 current = head;
 }
-free(head);
 }
