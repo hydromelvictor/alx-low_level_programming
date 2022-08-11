@@ -12,12 +12,16 @@ size_t print_list(const list_t *h)
 {
 int i = 0;
 size_t count = 0;
+if (h == NULL)
+{
+return (0);
+}
 while (h != NULL)
 {
 _putchar('[');
 if (h->str == NULL)
 {
-_putchar('0');
+_putchar(0 + '0');
 }
 else
 {
