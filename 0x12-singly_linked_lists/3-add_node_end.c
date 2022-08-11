@@ -24,7 +24,6 @@ end->str = strdup(str);
 end->len = strlen(str);
 if (head == NULL)
 {
-end->len = strlen(str);
 end->next = *head;
 *head = end;
 }
