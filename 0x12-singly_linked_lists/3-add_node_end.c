@@ -21,7 +21,14 @@ while (start->next)
 {
 start = start->next;
 }
+if (str == NULL)
+{
+strcpy(end->str, "(nil)");
+}
+else
+{
 end->str = strdup(str);
+}
 end->len = strlen(str);
 end->next = NULL;
 start->next = end;
