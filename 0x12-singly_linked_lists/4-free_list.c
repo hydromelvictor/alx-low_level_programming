@@ -12,5 +12,9 @@ if (head == NULL)
 {
 return;
 }
+while (head != NULL)
+{
 free(head);
+head = head->next;
+}
 }
