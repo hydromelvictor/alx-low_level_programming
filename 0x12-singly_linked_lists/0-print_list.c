@@ -21,6 +21,7 @@ _putchar(')');
  *
  * @p: parameter
  */
+/*
 void jet(const list_t *p)
 {
 int i = 0;
@@ -33,6 +34,7 @@ _putchar(p->str[i]);
 i++;
 }
 }
+*/
 /**
  * print_list - prints all the elements of a list_t list
  *
