@@ -8,8 +8,7 @@
  */
 void free_list(list_t *head)
 {
-list_t *current = malloc(sizeof(list_t));
-if (current == NULL || head == NULL)
+if (head == NULL)
 {
 return;
 }
