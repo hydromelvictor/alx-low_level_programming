@@ -13,10 +13,12 @@ if (cur == NULL || head == NULL)
 {
 return;
 }
-while(head)
+while (head)
 {
 cur = head;
 head = head->next;
+cur->next = NULL;
 free(cur);
 }
+free(head);
 }
