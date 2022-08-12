@@ -13,7 +13,7 @@ if (cur == NULL || head == NULL)
 {
 return;
 }
-while (head)
+while (head->next)
 {
 cur = head->next;
 free(head);
