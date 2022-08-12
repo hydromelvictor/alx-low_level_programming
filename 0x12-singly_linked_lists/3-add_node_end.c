@@ -16,7 +16,7 @@ if (end == NULL || start == NULL)
 return (NULL);
 }
 end->str = (str == NULL) ? strdup("(nil)") : strdup(str);
-end->len = strlen(str);
+end->len = (str == NULL) ? 0 : strlen(str);
 if (head == NULL)
 {
 end->next = *head;
@@ -24,7 +24,7 @@ end->next = *head;
 }
 else
 {
-start = *head;
+*start = **head;
 while (start->next)
 {
 start = start->next;
