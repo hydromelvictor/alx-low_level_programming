@@ -14,12 +14,9 @@ if (cur == NULL || head == NULL)
 return;
 }
 cur = NULL;
-while (head)
-{
-if (head->next)
+while (head != NULL)
 {
 cur = head->next;
-}
 free(head);
 head = cur;
 }
