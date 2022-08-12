@@ -9,7 +9,7 @@
 void free_list(list_t *head)
 {
 list_t *cur = malloc(sizeof(list_t));
-if (cur == NULL || head == NULL)
+if (cur == NULL)
 {
 return;
 }
