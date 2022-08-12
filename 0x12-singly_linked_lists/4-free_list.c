@@ -15,10 +15,8 @@ return;
 }
 while (head)
 {
-cur = head;
-head = head->next;
-cur->next = NULL;
-free(cur);
-}
+cur = head->next;
 free(head);
+head = cur;
+}
 }
