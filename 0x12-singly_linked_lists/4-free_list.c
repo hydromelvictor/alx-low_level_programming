@@ -13,7 +13,7 @@ if (cur == NULL)
 {
 return;
 }
-cur = NULL;
+cur = head;
 while (head != NULL)
 {
 cur = head->next;
