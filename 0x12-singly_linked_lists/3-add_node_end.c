@@ -25,10 +25,14 @@ end->next = *head;
 else
 {
 start = *head;
-do
+while (1)
 {
+if (start->next == NULL)
+{
+break;
+}
 start = start->next;
-}while (start->next != NULL);
+}
 start->next = end;
 end->next = NULL;
 }
