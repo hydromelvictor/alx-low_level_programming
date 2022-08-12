@@ -24,11 +24,11 @@ end->next = *head;
 }
 else
 {
-*start = **head;
-while (start->next)
+start = *head;
+do
 {
 start = start->next;
-}
+}while (start->next != NULL);
 start->next = end;
 end->next = NULL;
 }
