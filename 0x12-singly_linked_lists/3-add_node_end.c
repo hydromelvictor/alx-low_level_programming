@@ -25,7 +25,7 @@ end->next = *head;
 else
 {
 start = *head;
-while (start)
+while (start->next)
 {
 start = start->next;
 }
