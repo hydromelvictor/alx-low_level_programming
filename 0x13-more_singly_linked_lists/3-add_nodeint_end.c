@@ -5,16 +5,11 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 {
 listint_t *endNbre = malloc(sizeof(listint_t));
 listint_t *start = malloc(sizeof(listint_t));
-if (endNbre == NULL || start == NULL)
+if (endNbre == NULL || start == NULL || head == NULL)
 {
 return (NULL);
 }
-if (head == NULL)
-{
-return (add_nodeint(head,n));
-}
-else
-{
+
 endNbre->n = n;
 endNbre->next = NULL;
 start = *head;
@@ -24,5 +19,4 @@ start = start->next;
 }
 start->next = endNbre;
 return (endNbre);
-}
 }
