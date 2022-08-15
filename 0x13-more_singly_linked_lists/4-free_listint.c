@@ -19,5 +19,6 @@ while (del->next != NULL)
     free(del);
     del = del->next;
 }
+free(del);
 }
 
