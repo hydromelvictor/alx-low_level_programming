@@ -16,8 +16,13 @@ return;
 while (head)
 {
 up = head;
+if (head->next)
+{
 head = head->next;
+}
 free(up->n);
 free(up);
 }
+free(head->n);
+free(head);
 }
