@@ -23,11 +23,14 @@ if (*head == NULL)
 {
 *head = endNbre;
 }
+else
+{
 start = *head;
 while (start->next != NULL)
 {
 start = start->next;
 }
 start->next = endNbre;
+}
 return (endNbre);
 }
