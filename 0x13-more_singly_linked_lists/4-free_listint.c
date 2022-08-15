@@ -16,7 +16,7 @@ return;
 del = head;
 while (del != NULL)
 {
-del = head->next;
+del = del->next;
 free(head);
 head = del;
 }
