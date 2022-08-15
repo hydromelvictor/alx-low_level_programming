@@ -14,11 +14,11 @@ if (del == NULL)
 return;
 }
 del = head;
-free(head);
-while (del->next != NULL)
+while (del != NULL)
 {
     free(del);
     del = del->next;
 }
+free(head);
 }
 
