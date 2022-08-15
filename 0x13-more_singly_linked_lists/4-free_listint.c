@@ -21,5 +21,6 @@ free(head);
 head = del;
 }
 free(del);
+free(head);
 }
 
