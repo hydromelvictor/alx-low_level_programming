@@ -13,14 +13,9 @@ if (up == NULL || head == NULL)
 {
 return;
 }
-while (head->next != NULL)
+while (head != NULL)
 {
-up = head;
-head = head->next;
-free(up->n);
-free(up);
+free(head->next);
 }
-free(head->n);
-free(head);
 }
 
