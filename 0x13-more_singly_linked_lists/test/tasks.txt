@@ -449,10 +449,14 @@ File: 6-pop_listint.c
 7. Get node at index
 mandatory
 Write a function that returns the nth node of a listint_t linked list.
+Écrivez une fonction qui renvoie le nième nœud d'une liste chaînée listint_t.
 
 Prototype: listint_t *get_nodeint_at_index(listint_t *head, unsigned int index);
 where index is the index of the node, starting at 0
 if the node does not exist, return NULL
+
+où index est l'index du nœud, commençant à 0
+si le noeud n'existe pas, retourne NULL
 julien@ubuntu:~/0x13. More singly linked lists$ cat 7-main.c 
 #include <stdlib.h>
 #include <string.h>
