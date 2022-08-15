@@ -9,12 +9,11 @@
 void free_listint(listint_t *head)
 {
 listint_t *up = malloc(sizeof(listint_t));
-if (up == NULL)
+if (up == NULL || head == NULL)
 {
 return;
 }
 up = head;
-head = head->next;
 while (head)
 {
 up->next == NULL;
