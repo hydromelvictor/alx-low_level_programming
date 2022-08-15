@@ -29,6 +29,5 @@ while (start->next != NULL)
 start = start->next;
 }
 start->next = endNbre;
-free(start);
 return (endNbre);
 }
