@@ -13,13 +13,6 @@ if (up == NULL || head == NULL)
 {
 return;
 }
-if (head->next == NULL)
-{
-free(head->n);
-free(head);
-}
-else
-{
 while (head->next != NULL)
 {
 up = head;
@@ -30,4 +23,4 @@ free(up);
 free(head->n);
 free(head);
 }
-}
+
