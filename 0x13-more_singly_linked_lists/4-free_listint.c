@@ -20,6 +20,6 @@ del = del->next;
 free(head);
 head = del;
 }
-free(head);
+free(del);
 }
 
