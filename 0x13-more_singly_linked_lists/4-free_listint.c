@@ -13,12 +13,11 @@ if (up == NULL || head == NULL)
 {
 return;
 }
-up = head;
 while (head)
 {
-up->next == NULL;
-free(up);
-head = head->next;
-up = head;
+up = head->next;
+free(head);
+head->next = NULL;
+head = up;
 }
 }
