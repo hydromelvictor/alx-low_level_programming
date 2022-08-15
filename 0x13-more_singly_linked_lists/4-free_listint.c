@@ -22,10 +22,10 @@ else
 {
 while (head->next != NULL)
 {
-head = head->next;
 up = head;
 free(up->n);
 free(up);
+head = head->next;
 }
 }
 }
