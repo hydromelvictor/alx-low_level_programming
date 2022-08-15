@@ -9,17 +9,23 @@
 void free_listint(listint_t *head)
 {
 listint_t *up = malloc(sizeof(listint_t));
-if (up == NULL)
+if (up == NULL || head == NULL)
 {
 return;
 }
-while (head->next)
+if(head->next == NULL)
 {
-up = head;
+free(head->n);
+free(head);
+}
+else
+{
+while (head->next != NULL)
+{
 head = head->next;
+up = head;
 free(up->n);
 free(up);
 }
-free(head->n);
-free(head);
+}
 }
