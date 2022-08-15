@@ -11,15 +11,14 @@
 size_t listint_len(const listint_t *h)
 {
 size_t count = 0;
-listint_t *nbre = malloc(sizeof(listint_t));
 if (h == NULL)
 {
 return (count);
 }
-while (nbre)
+while (h)
 {
+h = h->next;
 count++;
-nbre = nbre->next;
 }
 return (count);
 }
