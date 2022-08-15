@@ -9,7 +9,7 @@
 void free_listint(listint_t *head)
 {
 listint_t *del = malloc(sizeof(listint_t));
-if (del == NULL || head == NULL)
+if (del == NULL)
 {
 return;
 }
