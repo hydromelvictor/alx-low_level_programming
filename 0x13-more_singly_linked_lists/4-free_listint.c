@@ -13,11 +13,12 @@ if (del == NULL)
 {
 return;
 }
-del = head;
 while (del != NULL)
 {
+    del = head;
+    del->next = NULL;
     free(del);
-    del = del->next;
+    head = head->next;
 }
 free(head);
 }
