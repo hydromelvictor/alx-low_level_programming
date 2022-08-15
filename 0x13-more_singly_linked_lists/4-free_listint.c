@@ -13,13 +13,10 @@ if (up == NULL || head == NULL)
 {
 return;
 }
-while (head)
+while (head->next)
 {
 up = head;
-if (head->next)
-{
 head = head->next;
-}
 free(up->n);
 free(up);
 }
