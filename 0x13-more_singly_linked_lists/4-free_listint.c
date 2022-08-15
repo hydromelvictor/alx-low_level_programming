@@ -14,6 +14,7 @@ if (del == NULL)
 return;
 }
 del = head;
+free(head);
 while (del->next != NULL)
 {
     free(del);
