@@ -17,6 +17,7 @@ if (i == index + 1)
 {
 return (head);
 }
+head = head->next;
 }
 return (NULL);
 }
