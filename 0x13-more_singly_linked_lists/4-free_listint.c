@@ -8,17 +8,11 @@
  */
 void free_listint(listint_t *head)
 {
-listint_t *del = malloc(sizeof(listint_t));
-if (del == NULL)
+while (head->next != NULL)
 {
-return;
-}
-del = head;
-while (del != NULL)
-{
-del = del->next;
 free(head);
-head = del;
+head = head->next;
 }
+free(head);
 }
 

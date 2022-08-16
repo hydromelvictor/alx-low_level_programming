@@ -32,5 +32,6 @@ start = start->next;
 }
 start->next = endNbre;
 }
+free(start);
 return (endNbre);
 }
