@@ -15,7 +15,7 @@ return;
 }
 if (head == NULL)
 {
-*head = NULL;
+head = NULL;
 }
 else
 {
