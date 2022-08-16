@@ -10,8 +10,8 @@ else
 {
 while (head != NULL)
 {
+sum += head->n; 
 head = head->next;
-sum++;
 }
 return (sum);
 }
