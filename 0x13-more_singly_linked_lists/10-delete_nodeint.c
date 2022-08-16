@@ -22,8 +22,8 @@ i++;
 if (i == index)
 {
 del = start->next;
+start->next = del->next;
 free(del);
-start->next = start->next->next;
 return (1);
 }
 start = start->next;
