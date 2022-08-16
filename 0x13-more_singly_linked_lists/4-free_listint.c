@@ -1,4 +1,5 @@
 #include "lists.h"
+#include <stddef.h>
 /**
  * free_listint - frees a listint_t list
  *
@@ -10,10 +11,8 @@ if (head != NULL)
 {
 if (head->next != NULL)
 {
-free(&head->next->n);
 free_listint(head->next);
 }
-free(&head->n);
 free(head);
 }
 }
