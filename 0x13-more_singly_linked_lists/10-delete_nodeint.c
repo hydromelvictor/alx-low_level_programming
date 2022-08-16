@@ -15,15 +15,15 @@ if (del == NULL || start == NULL)
 {
 return (-1);
 }
-*start = **head;
+start = *head;
 while (start != NULL)
 {
 i++;
-if (i == index - 1)
+if (i == index)
 {
 del = start->next;
-start->next = del->next;
 free(del);
+start->next = start->next->next;
 return (1);
 }
 start = start->next;
