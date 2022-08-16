@@ -27,6 +27,7 @@ start->next = del->next;
 free(del);
 return (1);
 }
+start = start->next;
 }
 return (-1);
 }
