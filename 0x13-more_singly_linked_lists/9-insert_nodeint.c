@@ -20,7 +20,6 @@ start = *head;
 new->n = n;
 while (start != NULL)
 {
-
 i++;
 if (i == idx)
 {
