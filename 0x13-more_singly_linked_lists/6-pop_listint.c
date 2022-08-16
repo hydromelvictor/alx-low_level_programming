@@ -18,6 +18,5 @@ return (0);
 *rep = **head;
 n = &rep->n;
 *head = (rep->next != NULL) ? rep->next : NULL;
-fre(rep);
 return (n);
 }
