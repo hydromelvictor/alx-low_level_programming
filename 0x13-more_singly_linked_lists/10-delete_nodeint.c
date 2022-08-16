@@ -10,8 +10,7 @@
 int delete_nodeint_at_index(listint_t **head, unsigned int index)
 {
 unsigned int i = 0;
-listint_t *del = malloc(sizeof(listint_t));
-listint_t *start = malloc(sizeof(listint_t));
+listint_t *del = malloc(sizeof(listint_t)), *start = malloc(sizeof(listint_t));
 if (del == NULL || start == NULL)
 {
 return (-1);
@@ -20,7 +19,7 @@ start = *head;
 while (start != NULL)
 {
 i++;
-if (i == index)
+if (i == index - 1)
 {
 del = start->next;
 start->next = del->next;
