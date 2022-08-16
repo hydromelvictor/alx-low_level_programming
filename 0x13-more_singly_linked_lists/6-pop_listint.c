@@ -17,8 +17,8 @@ return (0);
 }
 *rep = **head;
 n = rep->n;
-rep = (rep->next != NULL) ? rep->next : NULL;
-free(*head);
-*head = rep;
+*head = (rep->next != NULL) ? rep->next : NULL;
+free(&rep->n);
+free(rep);
 return (n);
 }
