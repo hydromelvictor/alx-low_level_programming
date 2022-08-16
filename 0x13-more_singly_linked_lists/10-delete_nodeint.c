@@ -20,7 +20,7 @@ start = *head;
 while (start != NULL)
 {
 i++;
-if (i == index - 1)
+if (i == index)
 {
 del = start->next;
 start->next = del->next;
