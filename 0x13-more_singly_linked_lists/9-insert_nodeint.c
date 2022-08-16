@@ -20,13 +20,13 @@ start = *head;
 new->n = n;
 while (start != NULL)
 {
-i++;
 if (i == idx)
 {
 new->next = start->next;
 start->next = new;
 return (new);
 }
+i++;
 start = start->next;
 }
 return (NULL);
