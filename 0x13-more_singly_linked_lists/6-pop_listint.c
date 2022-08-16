@@ -16,7 +16,5 @@ return (0);
 }
 *rep = **head;
 *head = (rep->next != NULL) ? rep->next : NULL;
-free(&rep->n);
-fre(rep);
 return (rep->n);
 }
