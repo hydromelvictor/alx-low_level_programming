@@ -15,14 +15,14 @@ return;
 }
 if (head == NULL)
 {
-printf("(nil)\n");
+*head = NULL;
 }
 else
 {
 *nbre = **head;
 if (nbre->next != NULL)
 {
-free_listint2(nbre->next);
+free_listint2(&nbre->next);
 }
 free(nbre);
 }
