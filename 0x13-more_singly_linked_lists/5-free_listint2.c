@@ -11,7 +11,7 @@ void free_listint2(listint_t **head)
 listint_t *nbre = malloc(sizeof(listint_t));
 if (nbre == NULL)
 {
-return (NULL);
+return;
 }
 if (head == NULL)
 {
@@ -19,10 +19,11 @@ printf("(nil)\n");
 }
 else
 {
-nbre = *head;
+*nbre = **head;
 while (nbre)
 {
 *head = nbre->next;
+free(&nbre->n);
 free(nbre);
 nbre = *head;
 }

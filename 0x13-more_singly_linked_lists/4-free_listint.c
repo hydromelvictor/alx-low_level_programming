@@ -13,6 +13,8 @@ if (del == NULL || head == NULL)
 {
 return;
 }
+else
+{
 *del = *head;
 while (del != NULL)
 {
@@ -23,6 +25,5 @@ del = del->next;
 }
 free(&head->n);
 free(head);
-free(&del->n);
-free(del);
+}
 }
