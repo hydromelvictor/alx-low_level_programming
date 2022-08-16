@@ -18,12 +18,6 @@ return (NULL);
 }
 start = *head;
 new->n = n;
-if (idx == 0)
-{
-new->next == start;
-*head = new;
-return (new);
-}
 while (start != NULL)
 {
 
