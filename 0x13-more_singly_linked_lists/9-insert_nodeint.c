@@ -18,7 +18,7 @@ return (NULL);
 }
 start = *head;
 new->n = n;
-while (start != NULL)
+while (start->next != NULL)
 {
 i++;
 if (i == idx)
