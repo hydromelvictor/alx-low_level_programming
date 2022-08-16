@@ -29,11 +29,5 @@ return (new);
 }
 start = start->next;
 }
-if (idx == i)
-{
-start->next = new;
-new->next = NULL;
-return (new);
-}
 return (NULL);
 }
