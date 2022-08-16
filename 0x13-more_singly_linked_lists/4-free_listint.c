@@ -13,6 +13,7 @@ if (head->next != NULL)
 {
 free_listint(head->next);
 }
+free(&head->n);
 free(head);
 }
 }

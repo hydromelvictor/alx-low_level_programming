@@ -646,6 +646,12 @@ Write a function that deletes the node at index index of a listint_t linked list
 Prototype: int delete_nodeint_at_index(listint_t **head, unsigned int index);
 where index is the index of the node that should be deleted. Index starts at 0
 Returns: 1 if it succeeded, -1 if it failed
+
+Écrivez une fonction qui supprime le nœud à l'index index d'une liste chaînée listint_t.
+
+où index est l'index du nœud qui doit être supprimé. L'index commence à 0
+Renvoie : 1 si cela a réussi, -1 si cela a échoué
+
 julien@ubuntu:~/0x13. More singly linked lists$ cat 10-main.c 
 #include <stdlib.h>
 #include <string.h>
@@ -804,6 +810,14 @@ Returns: a pointer to the first node of the reversed list
 You are not allowed to use more than 1 loop.
 You are not allowed to use malloc, free or arrays
 You can only declare a maximum of two variables in your function
+
+Écrivez une fonction qui inverse une liste chaînée listint_t.
+
+Renvoie : un pointeur vers le premier nœud de la liste inversée
+Vous n'êtes pas autorisé à utiliser plus d'une boucle.
+Vous n'êtes pas autorisé à utiliser malloc, free ou arrays
+Vous ne pouvez déclarer qu'un maximum de deux variables dans votre fonction
+
 julien@ubuntu:~/0x13. More singly linked lists$ cat 100-main.c 
 #include <stdlib.h>
 #include <string.h>
@@ -886,6 +900,14 @@ Returns: the number of nodes in the list
 This function can print lists with a loop
 You should go through the list only once
 If the function fails, exit the program with status 98
+
+Écrivez une fonction qui imprime une liste chaînée listint_t.
+
+Renvoie : le nombre de nœuds dans la liste
+Cette fonction peut imprimer des listes avec une boucle
+Vous ne devriez parcourir la liste qu'une seule fois
+Si la fonction échoue, quittez le programme avec le statut 98
+
 Output format: see example
 julien@ubuntu:~/0x13. More singly linked lists$ cat 101-main.c 
 #include <stdlib.h>
@@ -964,6 +986,14 @@ This function can free lists with a loop
 You should go though the list only once
 Returns: the size of the list that was free’d
 The function sets the head to NULL
+
+Écrivez une fonction qui libère une liste listint_t.
+
+Cette fonction peut libérer des listes avec une boucle
+Vous ne devriez parcourir la liste qu'une seule fois
+Renvoie : la taille de la liste qui a été libérée
+La fonction définit la tête sur NULL
+
 julien@ubuntu:~/0x13. More singly linked lists$ cat 102-main.c 
 #include <stdlib.h>
 #include <string.h>
@@ -1045,6 +1075,14 @@ Prototype: listint_t *find_listint_loop(listint_t *head);
 Returns: The address of the node where the loop starts, or NULL if there is no loop
 You are not allowed to use malloc, free or arrays
 You can only declare a maximum of two variables in your function
+
+
+Écrivez une fonction qui trouve la boucle dans une liste chaînée.
+
+Renvoie : l'adresse du nœud où la boucle commence, ou NULL s'il n'y a pas de boucle
+Vous n'êtes pas autorisé à utiliser malloc, free ou arrays
+Vous ne pouvez déclarer qu'un maximum de deux variables dans votre fonction
+
 julien@ubuntu:~/0x13. More singly linked lists$ cat 103-main.c 
 #include <stdlib.h>
 #include <string.h>
