@@ -15,7 +15,7 @@ if (del == NULL || start == NULL)
 {
 return (-1);
 }
-start = *head;
+*start = **head;
 while (start != NULL)
 {
 i++;
