@@ -20,12 +20,10 @@ printf("(nil)\n");
 else
 {
 *nbre = **head;
-while (nbre)
+if (nbre->next != NULL)
 {
-*head = nbre->next;
-free(&nbre->n);
-free(nbre);
-nbre = *head;
+free_listint2(nbre->next);
 }
+free(nbre);
 }
 }
