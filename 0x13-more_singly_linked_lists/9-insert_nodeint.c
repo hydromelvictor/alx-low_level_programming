@@ -19,19 +19,13 @@ return (NULL);
 }
 *start = **head;
 new->n = n;
-if (idx == 0)
-{
-new->next = NULL;
-*head = new;
-return (new);
-}
 while(start != NULL)
 {
 i++;
 if (i == idx)
 {
 new->next = start->next;
-start->next = new->next;
+start->next = new;
 return (new);
 }
 start = start->next;
