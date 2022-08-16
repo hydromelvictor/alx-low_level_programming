@@ -16,9 +16,8 @@ if (rep == NULL || head == NULL)
 return (0);
 }
 *rep = **head;
-n = rep->n;
+n = &rep->n;
 *head = (rep->next != NULL) ? rep->next : NULL;
-free(&rep->n);
 fre(rep);
 return (n);
 }
