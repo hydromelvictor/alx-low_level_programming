@@ -13,12 +13,6 @@ if (nbre == NULL)
 {
 return;
 }
-if (head == NULL)
-{
-head = NULL;
-}
-else
-{
 nbre = *head;
 if (nbre->next != NULL)
 {
@@ -26,5 +20,6 @@ if (nbre->next != NULL)
 free_listint2(head);
 }
 free(nbre);
+*head = NULL;
 }
-}
+
