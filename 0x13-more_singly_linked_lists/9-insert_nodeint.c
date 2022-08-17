@@ -29,5 +29,11 @@ return (new);
 }
 start = start->next;
 }
+if (idx == i + 1)
+{
+start->next = new;
+new->next = NULL;
+return (new);
+}
 return (NULL);
 }
