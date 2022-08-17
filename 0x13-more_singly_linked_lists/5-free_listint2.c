@@ -19,7 +19,7 @@ head = NULL;
 }
 else
 {
-*nbre = **head;
+nbre = *head;
 if (nbre->next != NULL)
 {
 free_listint2(&nbre->next);
