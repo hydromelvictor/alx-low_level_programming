@@ -13,12 +13,18 @@ if (nbre == NULL)
 {
 return;
 }
-nbre = *head;
-while (nbre->next != NULL)
+if (head == NULL)
 {
-*head = nbre;
-free(head);
-nbre = nbre->next;
+head = NULL;
+}
+else
+{
+nbre = *head;
+if (nbre->next != NULL)
+{
+**head = *nbre->next;
+free_listint2(head);
 }
 free(nbre);
+}
 }
