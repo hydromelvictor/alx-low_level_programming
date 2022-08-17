@@ -10,6 +10,17 @@
  */
 listint_t *reverse_listint(listint_t **head)
 {
-
+if (*head != NULL)
+{
+if ((**head).next == NULL)
+{
+return (*head)
+}
+else
+{
+*head = reverse_listint((**head).next);
+(**head).next = (**head);
+}
+}
 return (*head);
 }
