@@ -18,6 +18,13 @@ return (NULL);
 }
 start = *head;
 new->n = n;
+if (start != NULL)
+{
+if (idx == 0)
+{
+new->next = *head;
+*head = new;
+}
 while (start != NULL)
 {
 i++;
@@ -25,9 +32,10 @@ if (i == idx)
 {
 new->next = start->next;
 start->next = new;
-return (new);
 }
 start = start->next;
+}
+return (new);
 }
 return (NULL);
 }
