@@ -16,15 +16,6 @@ if (del == NULL || start == NULL)
 return (-1);
 }
 start = *head;
-if (start != NULL)
-{
-if (index == 0)
-{
-start = start->next;
-free(head);
-*head = start;
-return (1);
-}
 while (start != NULL)
 {
 i++;
