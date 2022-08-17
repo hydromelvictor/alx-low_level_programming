@@ -35,7 +35,7 @@ start->next = new;
 }
 start = start->next;
 }
-if (idx == i)
+if (idx == i - 1)
 {
 start->next = new;
 new->next = NULL;
