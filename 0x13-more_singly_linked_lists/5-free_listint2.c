@@ -14,7 +14,11 @@ if (nbre == NULL)
 return;
 }
 nbre = *head;
-free_listint(nbre);
+if (nbre->next != NULL)
+{
+*head = nbre->next;
+free_listint2(head);
+}
 free(nbre);
 *head = NULL;
 }
