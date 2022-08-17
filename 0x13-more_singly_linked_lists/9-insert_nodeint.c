@@ -18,22 +18,16 @@ return (NULL);
 }
 start = *head;
 new->n = n;
-while (start->next != NULL)
+while (start != NULL)
 {
 i++;
-if (i == idx - 1)
+if (i == idx)
 {
 new->next = start->next;
 start->next = new;
 return (new);
 }
 start = start->next;
-}
-if (idx == i - 1)
-{
-start->next = new;
-new->next = NULL;
-return (new);
 }
 return (NULL);
 }
