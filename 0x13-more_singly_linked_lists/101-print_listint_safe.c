@@ -1,7 +1,7 @@
 #include "lists.h"
 /**
- * print_istint_safe - print lists
- * 
+ * print_listint_safe - print lists
+ *
  * @head: parameter
  * Return: size_t
  */
