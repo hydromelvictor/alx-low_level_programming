@@ -13,15 +13,17 @@ if (nbre == NULL)
 {
 return;
 }
-nbre = *head;
-if (nbre != NULL)
+if (head == NULL)
 {
+head = NULL;
+}
+else
+{
+*nbre = **head;
 if (nbre->next != NULL)
 {
-**head = *(nbre->next);
-free_listint2(head);
+free_listint2(&nbre->next);
 }
 free(nbre);
 }
-return (head);
 }
