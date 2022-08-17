@@ -21,5 +21,6 @@ free_listint2(head);
 }
 free(nbre);
 head = NULL;
+printf("(nil)\n");
 }
 
