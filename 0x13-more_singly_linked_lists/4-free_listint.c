@@ -7,11 +7,19 @@
  */
 void free_listint(listint_t *head)
 {
+listint_t *avaible = malloc(sizeof(listint_t));
+if (avaible == NULL)
+{
+
+return;
+}
+avaible = head;
 if (head != NULL)
 {
 if (head->next != NULL)
 {
-free_listint(head->next);
+avaible = head->next;
+free_listint(avaible);
 }
 free(head);
 }
