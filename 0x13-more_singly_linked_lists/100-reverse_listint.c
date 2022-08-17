@@ -16,11 +16,6 @@ if ((**head).next == NULL)
 {
 return (*head)
 }
-else
-{
-*head = reverse_listint((**head).next);
-(**head).next = (**head);
-}
 }
 return (*head);
 }
