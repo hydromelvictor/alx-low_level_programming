@@ -21,7 +21,7 @@ new->n = n;
 while (start->next != NULL)
 {
 i++;
-if (i == idx)
+if (i == idx - 1)
 {
 new->next = start->next;
 start->next = new;
@@ -29,7 +29,7 @@ return (new);
 }
 start = start->next;
 }
-if (idx == i)
+if (idx == i - 1)
 {
 start->next = new;
 new->next = NULL;
