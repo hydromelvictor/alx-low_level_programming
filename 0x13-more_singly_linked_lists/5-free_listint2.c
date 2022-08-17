@@ -20,6 +20,6 @@ if (nbre->next != NULL)
 free_listint2(head);
 }
 free(nbre);
-*head = NULL;
+head = NULL;
 }
 
