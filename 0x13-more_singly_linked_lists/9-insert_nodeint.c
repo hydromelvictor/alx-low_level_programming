@@ -29,7 +29,7 @@ return (new);
 }
 start = start->next;
 }
-if (idx == i + 1)
+if (idx == i + 2)
 {
 start->next = new;
 new->next = NULL;
