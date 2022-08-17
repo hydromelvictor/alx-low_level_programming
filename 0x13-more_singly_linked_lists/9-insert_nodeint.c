@@ -25,7 +25,7 @@ if (idx == 0)
 new->next = *head;
 *head = new;
 }
-while (start != NULL)
+while (start->next != NULL)
 {
 i++;
 if (i == idx)
@@ -34,6 +34,10 @@ new->next = start->next;
 start->next = new;
 }
 start = start->next;
+}
+if (idx == i)
+{
+
 }
 return (new);
 }
