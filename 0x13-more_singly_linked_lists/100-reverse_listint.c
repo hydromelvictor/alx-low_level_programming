@@ -4,13 +4,17 @@
 #include "lists.h"
 listint_t *reverse_listint(listint_t **head)
 {
-listint_t *next = NULL, *prev = head;
-while(prev->next != NULL || next->next != NULL)
+listint_t *current = *head, *prev = current->next;
+if (head == NULL)
 {
-head = prev->next;
-prev->next = next;
-next = head;
-prev = next->next;
+return (NULL);
 }
+if (prev == NULL)
+{
 return (head);
 }
+prev->next = reverse_listint(prev);
+current->next = NULL;
+return (head);
+}
+
