@@ -8,13 +8,20 @@
  */
 void free_listint2(listint_t **head)
 {
-if (*head != NULL)
+listint_t *nbre = malloc(sizeof(listint_t));
+if (nbre == NULL)
 {
-if ((**head).next != NULL)
-{
-free_listint2((**head).next);
+return;
 }
-free(*head);
+nbre = *head;
+if (nbre != NULL)
+{
+if (nbre->next != NULL)
+{
+*head = nbre->next;
+free_listint2(head);
+}
+free(nbre);
 }
 *head = NULL;
 return (head);
