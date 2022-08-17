@@ -22,7 +22,7 @@ else
 nbre = *head;
 if (nbre->next != NULL)
 {
-**head = *nbre->next;
+*head = nbre->next;
 free_listint2(head);
 }
 free(nbre);
