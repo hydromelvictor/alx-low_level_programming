@@ -20,20 +20,14 @@ start = *head;
 new->n = n;
 while (start != NULL)
 {
-i++;
 if (i == idx)
 {
 new->next = start->next;
 start->next = new;
 return (new);
 }
+i++;
 start = start->next;
-}
-if (idx == i + 2)
-{
-start->next = new;
-new->next = NULL;
-return (new);
 }
 return (NULL);
 }
