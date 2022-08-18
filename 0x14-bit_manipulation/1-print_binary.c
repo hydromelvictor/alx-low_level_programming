@@ -9,7 +9,7 @@
  */
 void print_binary(unsigned long int n)
 {
-unsigned int mask, i, z = n, x = 0;
+unsigned long int mask, i, z = n, x = 0;
 while (z > 1)
 {
 z >>= 1;
