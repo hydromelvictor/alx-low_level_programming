@@ -3,7 +3,8 @@
 #include "main.h"
 unsigned char *binary(unsigned long int n)
 {
-unsigned long int mask, i, z = n, x = 0;
+unsigned long int mask, z = n;
+unsigned int i, x = 0;
 unsigned char *s = malloc(sizeof(unsigned char));
 if (s == NULL)
 {
@@ -15,7 +16,7 @@ z >>= 1;
 x++;
 }
 mask = 1 << x;
-for (i = 1; i <= x + 1; ++i)
+for (i = 0; i <= x; i++)
 {
 s[i] = (n & mask ? '1' : '0');
 n <<= 1;
@@ -31,16 +32,16 @@ return (s);
  */
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
-unsigned long int s = n ^ m;
-unsigned int i = 0, j = 0;
-unsigned char *d = binary(s);
-while (d[i] != '\0')
+unsigned char *sn = binary(n), *sm = binary(m);
+int i, j = 0;
+while (*sn != '\0' || *sm != '\0')
 {
-if (d[i] == '1')
-{
-j++;
-}
-i++;
+    if (*sm != *sn)
+    {
+    j++;
+    }
+    *sm++;
+    *sn++;
 }
 return (j);
 }
