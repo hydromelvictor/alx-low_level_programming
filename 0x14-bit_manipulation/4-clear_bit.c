@@ -15,6 +15,5 @@ if (n != NULL)
 *n &= ~(1 << index);
 return (1);
 }
-else
 return (-1);
 }
