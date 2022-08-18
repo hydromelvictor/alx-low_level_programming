@@ -16,7 +16,7 @@ z >>= 1;
 x++;
 }
 mask = 1 << x;
-for (i = 0; i <= x; ++i)
+for (i = 0; i <= x; i++)
 {
 _putchar(n & mask ? '1' : '0');
 n <<= 1;
