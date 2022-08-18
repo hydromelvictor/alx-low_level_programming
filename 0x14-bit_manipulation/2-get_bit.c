@@ -24,7 +24,7 @@ x++;
 mask = 1 << x;
 if (index <= x)
 {
-for (i = 0; i <= x; ++i)
+for (i = 0; i <= x; i++)
 {
 if (i == index)
 {
