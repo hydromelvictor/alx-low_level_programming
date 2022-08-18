@@ -10,9 +10,9 @@
  */
 int get_bit(unsigned long int n, unsigned int index)
 {
-unsigned long int mask, z = n;
+unsigned long int mask, z = n, *s = malloc(sizeof(int));
 unsigned int i, x = 0;
-int *s = malloc(sizeof(int));
+
 if (s == NULL)
 {
 return (-1);
