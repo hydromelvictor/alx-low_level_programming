@@ -3,7 +3,7 @@
 #include "main.h"
 /**
  * get_bit - Get the bit object
- * 
+ *
  * @n: parameter
  * @index: parameter
  * Return: int
