@@ -21,8 +21,8 @@ x++;
 if (index <= x)
 {
 *n |= (1 << index);
-}
 return (1);
+}
 }
 return (-1);
 }
