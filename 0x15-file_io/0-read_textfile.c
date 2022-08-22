@@ -29,7 +29,7 @@ err = read(fd, buf, letters);
 if (err < letters)
 {
 close(fd);
-return (0);   
+return (0);
 }
 *(buf + letters) = '\0';
 err = dprintf(STDOUT_FILENO, "%s", buf);
