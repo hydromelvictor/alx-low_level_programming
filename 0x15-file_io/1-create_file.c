@@ -6,10 +6,10 @@
 #include <unistd.h>
 /**
  * create_file - Create a file object
- * 
+ *
  * @filename: parameter
  * @text_content: parameter
- * Return int
+ * Return: int
  */
 int create_file(const char *filename, char *text_content)
 {
