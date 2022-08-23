@@ -5,50 +5,90 @@
 #include <fcntl.h>
 #include <unistd.h>
 #define TOP 1024
-int main(int argc, char *argv[])
+/**
+ * error97 - error for arguments
+ *
+ * n: parameter
+ */
+void error97(int n)
 {
-int fd_pos, fd, err0, err, pos = 0;
-char buf[TOP];
-if (argc != 3)
+if (n != 3)
 {
 dprintf(STDERR_FILENO,"Usage: cp file_from file_to\n");
 exit(97);
 }
-fd_pos = open(argv[1], O_RDONLY);
-if (fd_pos == -1)
+}
+/**
+ * error98 - error98
+ *
+ * @fd: param
+ */
+void error98(int fd)
+{
+if (fd == -1)
 {
 dprintf(STDERR_FILENO, "Error: Can't read from file NAME_OF_THE_FILE\n");
+close(fd);
 exit(98);
 }
-fd = open(argv[2], O_RDWR | O_CREAT | O_TRUNC, 0600);
+}
+/**
+ * error99 - error for file
+ *
+ * @fd: param
+ */
+void error99(int fd)
+{
 if (fd == -1)
 {
 dprintf(STDERR_FILENO, "Error: Can't write to NAME_OF_THE_FILE\n");
+close(fd);
 exit(99);
 }
-err0 = read(fd_pos, buf, TOP);
-if (err0 < 0)
-{
-write(STDERR_FILENO, "Error: Can't write to NAME_OF_THE_FILE\n", 39);
-exit(99);
 }
-err0 = write(fd, buf, TOP);
-if (err0 < 0 || err0 < 0)
+/**
+ * error100 - error for close
+ *
+ * @n: param
+ */
+void error100(int n)
 {
-write(STDERR_FILENO, "Error: Can't write to NAME_OF_THE_FILE\n", 39);
-exit(99);
-}
-err = close(fd_pos);
-if (err == EOF)
+if (n == EOF)
 {
-dprintf(STDERR_FILENO, "Error: Can't close fd %d", fd_pos);
+dprintf(STDERR_FILENO, "Error: Can't close fd %d", n);
 exit(100);
 }
-err = close(fd);
-if (err == EOF)
-{
-dprintf(STDERR_FILENO, "Error: Can't close fd %d", fd);
-exit(100);
 }
+/**
+ * main - check
+ *
+ * @argc: param
+ * @argv: param
+ * Return: int
+ */
+int main(int argc, char *argv[])
+{
+int fd_from, fd_to, err0, err, pos = 0;
+char buf[TOP];
+error97(argc);
+fd_from = open(argv[1], O_RDONLY);
+error98(fd_from);
+fd_to = open(argv[2], O_RDWR | O_CREAT | O_TRUNC, 0600);
+error99(fd_to);
+while (err == TOP)
+{
+err = read(fd_from, buf, TOP);
+error98(err);
+err0 = write(fd_to, buf, TOP);
+error99(err0);
+if (err != err0)
+{
+error99(err);
+}
+}
+err = close(fd_from);
+error100(err);
+err0 = close(fd_to);
+error100(err0);
 return (0);
 }
