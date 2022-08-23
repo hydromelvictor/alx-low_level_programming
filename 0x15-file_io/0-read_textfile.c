@@ -22,12 +22,14 @@ return (0);
 fd = open(filename, O_RDONLY);
 if (fd == -1)
 {
+free(buf);
 close(fd);
 return (0);
 }
 err = read(fd, buf, letters);
 if (err < letters)
 {
+free(buf);
 close(fd);
 return (0);
 }
@@ -35,9 +37,11 @@ return (0);
 err = dprintf(STDOUT_FILENO, "%s", buf);
 if (err != letters)
 {
+free(buf);
 close(fd);
 return (0);
 }
+free(buf);
 close(fd);
 return (err);
 }
