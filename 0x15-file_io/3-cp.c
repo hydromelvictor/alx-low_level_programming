@@ -26,8 +26,6 @@ if (fd == -1)
 dprintf(STDERR_FILENO, "Error: Can't write to NAME_OF_THE_FILE\n");
 exit(99);
 }
-while (lseek(fd_pos, pos + TOP, SEEK_SET) > 0)
-{
 err0 = read(fd_pos, buf, TOP);
 if (err0 < 0)
 {
@@ -39,7 +37,6 @@ if (err0 < 0 || err0 < 0)
 {
 write(STDERR_FILENO, "Error: Can't write to NAME_OF_THE_FILE\n", 39);
 exit(99);
-}
 }
 err = close(fd_pos);
 if (err == EOF)
