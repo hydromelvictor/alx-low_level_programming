@@ -4,7 +4,6 @@
 #include <sys/stat.h>
 #include <fcntl.h>
 #include <unistd.h>
-#define TOP 1024
 /**
  * error97 - error for arguments
  *
@@ -69,17 +68,17 @@ exit(100);
 int main(int argc, char *argv[])
 {
 int fd_from, fd_to, err0, err, pos = 0;
-char buf[TOP];
+char buf[1024];
 error97(argc);
 fd_from = open(argv[1], O_RDONLY);
 error98(fd_from);
 fd_to = open(argv[2], O_RDWR | O_CREAT | O_TRUNC, 0600);
 error99(fd_to);
-while (err == TOP)
+while (err == 1024)
 {
-err = read(fd_from, buf, TOP);
+err = read(fd_from, buf, 1024);
 error98(err);
-err0 = write(fd_to, buf, TOP);
+err0 = write(fd_to, buf, err);
 error99(err0);
 if (err != err0)
 {
