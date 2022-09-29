@@ -51,7 +51,7 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
         }
         current = current->next;
     }
-    if (i + 1 == index)
+    if (i == index)
     {
         current->prev->next = NULL;
         free(current);
