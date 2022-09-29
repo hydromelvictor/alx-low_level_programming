@@ -4,7 +4,7 @@
 /**
  * get_dnodeint_at_index - Get the dnodeint at index object
  *
- * @head: header 
+ * @head: header
  * @index: index
  * Return: dlistint_t*
  */
