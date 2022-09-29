@@ -3,7 +3,7 @@
 /**
  * sum_dlistint - sum the lists data
  *
- * head: parameter
+ * @head: parameter
  * Return: int
  */
 int sum_dlistint(dlistint_t *head)
