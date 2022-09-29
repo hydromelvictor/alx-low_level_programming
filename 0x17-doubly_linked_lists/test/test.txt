@@ -121,6 +121,17 @@ File: 6-sum_dlistint.c
   ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 7. Insert at index
 mandatory
+Écrivez une fonction qui insère un nouveau nœud à une position donnée.
+
+Prototype : dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n);
+où idx est l'index de la liste où le nouveau nœud doit être ajouté. L'index commence à 0
+Renvoie : l'adresse du nouveau nœud, ou NULL s'il a échoué
+s'il n'est pas possible d'ajouter le nouveau nœud à l'index idx, n'ajoutez pas le nouveau nœud 
+et renvoyez NULL
+Vos fichiers 2-add_dnodeint.c et 3-add_dnodeint_end.c seront compilés lors de la correction
+
+
+
 Write a function that inserts a new node at a given position.
 
 Prototype: dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n);
