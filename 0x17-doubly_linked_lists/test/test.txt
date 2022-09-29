@@ -228,6 +228,16 @@ File: 100-password
   /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 10. Palindromes
 #advanced
+Un nombre palindromique se lit de la même manière dans les deux sens. 
+Le plus grand palindrome fabriqué à partir du produit de deux nombres à 2 chiffres
+est 9009 = 91 × 99.
+
+Trouver le plus grand palindrome formé du produit de deux nombres à 3 chiffres.
+
+Enregistrez le résultat dans le fichier 102-result
+Votre fichier doit contenir le résultat exact, pas de nouvelle ligne, pas d'espace supplémentaire
+
+
 A palindromic number reads the same both ways. The largest palindrome made from the product of two 2-digit numbers 
 is 9009 = 91 × 99.
 
