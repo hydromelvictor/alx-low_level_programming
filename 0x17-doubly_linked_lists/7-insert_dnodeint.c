@@ -2,6 +2,38 @@
 #include <stdlib.h>
 
 /**
+ * insert - add node in begin
+ *
+ * @h: parameter
+ * @n: parameter
+ * Return: dlistint_t*
+ */
+dlistint_t *insert(dlistint_t **h, int n)
+{
+dlistint_t *current, *new = malloc(sizeof(dlistint_t));
+current = *h;
+if (new == NULL)
+{
+return (NULL);
+}
+new->n = n;
+if (*h == NULL)
+{
+new->next = NULL;
+new->prev = NULL;
+*h = new;
+}
+else
+{
+new->next = current;
+current->prev = new;
+new->prev = NULL;
+*h = new;
+}
+return (new);
+}
+
+/**
  * insert_dnodeint_at_index - insert node in position
  *
  * @h: header
@@ -21,20 +53,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
     new->n = n;
     if (idx == 0)
     {
-        if (*h == NULL)
-        {
-            new->next = NULL;
-            new->prev = NULL;
-            *h = new;
-        }
-        else
-        {
-            new->next = current;
-            current->prev = new;
-            new->prev = NULL;
-            *h = new;
-        }
-        return (new);
+        return insert(h, n);
     }
     else
     {
