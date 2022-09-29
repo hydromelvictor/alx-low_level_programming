@@ -202,6 +202,13 @@ File: 7-insert_dnodeint.c, 2-add_dnodeint.c, 3-add_dnodeint_end.c
   /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 8. Delete at index
 mandatory
+Écrivez une fonction qui supprime le nœud à l'index index d'une liste chaînée dlistint_t.
+
+Prototype : int delete_dnodeint_at_index(dlistint_t **head, index int non signé) ;
+où index est l'index du nœud qui doit être supprimé. L'index commence à 0
+Renvoie : 1 si cela a réussi, -1 si cela a échoué
+
+
 Write a function that deletes the node at index index of a dlistint_t linked list.
 
 Prototype: int delete_dnodeint_at_index(dlistint_t **head, unsigned int index);
