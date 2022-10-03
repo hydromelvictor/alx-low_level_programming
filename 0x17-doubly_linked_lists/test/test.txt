@@ -215,6 +215,13 @@ File: 8-delete_dnodeint.c
   ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 9. Crackme4
 #advanced
+Trouvez le mot de passe pour crackme4.
+
+Enregistrez le mot de passe dans le fichier 100-password
+Votre fichier doit contenir le mot de passe exact, pas de nouvelle ligne, pas d'espace supplémentaire
+Astuce : Le programme imprime "OK" lorsque le mot de passe est correct
+
+
 Find the password for crackme4.
 
 Save the password in the file 100-password
