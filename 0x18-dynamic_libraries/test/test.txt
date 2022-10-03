@@ -103,6 +103,8 @@ File: libdynamic.so, main.h
   //////////////////////////////////////////////////////////////////////////////////////////////////
 1. Without libraries what have we? We have no past and no future
 mandatory
+Créez un script qui crée une bibliothèque dynamique appelée liball.so à partir de tous les fichiers .c
+qui se trouvent dans le répertoire courant.
 
 Create a script that creates a dynamic library called liball.so from all the .c files 
 that are in the current directory.
@@ -146,6 +148,10 @@ File: 1-create_dynamic_lib.sh
   //////////////////////////////////////////////////////////////////////////////////////////////
 2. Let's call C functions from Python
 #advanced
+Je sais, il vous manque C lors du codage en Python. Alors réparons ça !
+
+Créez une bibliothèque dynamique contenant des fonctions C pouvant être appelées depuis Python.
+Voir l'exemple pour plus de détails.
 
 I know, you’re missing C when coding in Python. So let’s fix that!
 
@@ -197,6 +203,22 @@ File: 100-operations.so
   //////////////////////////////////////////////////////////////////////////////////////////////////
 3. Code injection: Win the Giga Millions!
 #advanced
+J'ai acheté un ticket pour le Giga Millions et j'ai choisi ces numéros : 9, 8, 10, 24, 75 + 9.
+Si vous pouviez exécuter deux commandes sur le même serveur où s'exécute le programme Giga Millions,
+pourriez-vous me faire gagner le jackpot ?
+
+Notre taupe nous a donné une copie du programme, vous pouvez le télécharger ici.
+Notre taupe nous a aussi donné un
+pièce de documentation :
+
+/* Programme Giga Millions
+  * Les joueurs peuvent choisir six numéros parmi deux pools de numéros distincts :
+  * - cinq nombres différents de 1 à 75 et
+  * - un chiffre de 1 à 15
+  * Vous gagnez le jackpot en faisant correspondre les six numéros gagnants d'un tirage.
+  * Vos chances de gagner le jackpot sont de 1 sur 258 890 850
+  *
+  * utilisation : ./gm n1 n2 n3 n4 n5 bonus
 
 
 I bought a ticket for the Giga Millions and chose these numbers: 9, 8, 10, 24, 75 + 9. 
@@ -205,6 +227,7 @@ could you make me win the Jackpot?
 
 Our mole got us a copy of the program, you can download it here. Our mole also gave us a 
 piece of documentation:
+
 /* Giga Millions program                                                                                    
   * Players may pick six numbers from two separate pools of numbers:                                                
   * - five different numbers from 1 to 75 and                                                                       
@@ -213,6 +236,7 @@ piece of documentation:
   * Your chances to win the jackpot is 1 in 258,890,850                                                             
   *                                                                                                                 
   * usage: ./gm n1 n2 n3 n4 n5 bonus
+
 You can’t modify the program gm itself as Master Sysadmin Sylvain (MSS) always checks its MD5 before 
 running it
 The system is an Linux Ubuntu 16.04
@@ -228,6 +252,31 @@ MSS will use the same terminal and session than our mole
 Before running the gm program, MSS always check the content of the directory
 MSS always exit after running the program gm
 TL;DR; This is what is going to happen
+
+
+
+Vous ne pouvez pas modifier le programme gm lui-même car le Master Sysadmin Sylvain (MSS) 
+vérifie toujours son MD5 avant l'exécuter
+Le système est un Linux Ubuntu 16.04
+Le serveur a accès à Internet
+Notre taupe ne pourra exécuter que deux commandes à partir d'un script shell,
+ ans être détectée par MSS
+Votre script shell doit comporter au maximum 3 lignes.
+Vous n'êtes pas autorisé à utiliser ;, &&, ||, |, `
+(il serait détecté par MSS), et avoir un maximum de deux commandes
+Notre taupe n'a l'autorisation de télécharger qu'un seul fichier sur le serveur.
+Ce sera votre script shell
+Notre taupe exécutera votre script shell de cette façon : mss@gm_server$ . ./101-make_me_win.sh
+Notre taupe exécutera votre script shell à partir du même répertoire contenant le programme gm, 
+exactement
+98 secondes avant que MSS ne lance gm avec mes numéros : ./gm 9 8 10 24 75 9
+MSS utilisera le même terminal et la même session que notre taupe
+Avant d'exécuter le programme gm, MSS vérifie toujours le contenu du répertoire
+MSS quitte toujours après avoir exécuté le programme gm
+TL ; DR ; C'est ce qui va se passer
+
+
+
 mss@gm_server$ . ./101-make_me_win.sh
 mss@gm_server$ rm 101-make_me_win.sh
 mss@gm_server$ ls -la
