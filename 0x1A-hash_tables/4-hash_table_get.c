@@ -8,8 +8,8 @@
 */
 char *hash_table_get(const hash_table_t *ht, const char *key)
 {
-    unsigned long int i;
-    hash_node_t *node;
+unsigned long int i;
+hash_node_t *node;
 if (key == NULL || strlen(key) < 1 || ht->array == NULL ||
 ht->size == 0)
 {
