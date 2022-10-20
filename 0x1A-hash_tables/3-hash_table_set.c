@@ -6,7 +6,7 @@
  * @value: value
  * Return: hash_node_t
 */
-hash_node_t *add_node(char *key, char *value)
+hash_node_t *add_node(const char *key, const char *value)
 {
     hash_node_t *new = malloc(sizeof(hash_node_t));
     if (new == NULL)
@@ -32,12 +32,12 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
     unsigned long int cle;
     hash_node_t *node, *new;
-    if (key == NULL || strlen(key) > 1 || value == NULL ||
-    strlen(value) == NULL || ht->array == NULL || ht->size == 0)
+    if (key == NULL || strlen(key) < 1 || value == NULL ||
+    strlen(value) < 1 || ht->array == NULL || ht->size == 0)
     {
         return (0);
     }
-    cle = hash_djb2(key) % ht->size;
+    cle = key_index((const unsigned char *) key, ht->size);
     node = ht->array[cle];
 
     while (node != NULL)
