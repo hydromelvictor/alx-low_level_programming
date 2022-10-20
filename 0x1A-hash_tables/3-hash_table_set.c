@@ -17,7 +17,7 @@ return (NULL);
 new->key = strdup(key);
 new->value = strdup(value);
 new->next = NULL;
-return new;
+return (new);
 }
 
 
