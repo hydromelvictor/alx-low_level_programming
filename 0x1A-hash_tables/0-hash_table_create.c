@@ -14,6 +14,12 @@ if (tab == NULL)
 return (NULL);
 }
 
+if (size == 0)
+{
+free(tab);
+return (NULL);
+}
+
 tab->size = size;
 tab->array = malloc(size * sizeof(hash_node_t));
 if (tab->array == NULL)
