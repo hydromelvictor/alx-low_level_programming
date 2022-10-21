@@ -56,6 +56,10 @@ while (node != NULL)
 if (strcmp(node->key, key) == 0)
 {
 node->value = strdup(value);
+if (node->value == NULL)
+{
+return (0);
+}
 return (1);
 }
 node = node->next;
