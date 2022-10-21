@@ -12,7 +12,7 @@ if (ht == NULL || ht->array == NULL || ht->size == 0)
 {
 return;
 }
-    
+
 for (i = 0; i < ht->size; i++)
 {
 while (ht->array[i] != NULL)
