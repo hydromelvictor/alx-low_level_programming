@@ -67,6 +67,7 @@ node = node->next;
 }
 
 new = add_node(key, value);
+new->next = ht->array[cle];
 ht->array[cle] = new;
 return (1);
 }
