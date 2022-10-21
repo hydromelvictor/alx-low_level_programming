@@ -55,6 +55,7 @@ while (node != NULL)
 {
 if (strcmp(node->key, key) == 0)
 {
+free(node->value);
 node->value = strdup(value);
 if (node->value == NULL)
 {
@@ -66,7 +67,6 @@ node = node->next;
 }
 
 new = add_node(key, value);
-new->next = ht->array[cle];
 ht->array[cle] = new;
 return (1);
 }
