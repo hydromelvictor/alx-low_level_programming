@@ -1,2 +1,2 @@
 all: school.c main.c
-    gcc -Wall -Werror -Wextra -pedantic -std=gnu89 main.c school.c -o school
+    gcc main.c school.c -o school

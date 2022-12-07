@@ -5,7 +5,7 @@ NAME= school
 RM= rm
 
 all:$(OBJ)
-    $(CC) -Wall -Werror -Wextra -pedantic -std=gnu89 $(SRC) -o $(NAME)
+    $(CC) $(SRC) -o $(NAME)
 
 .PHONY: clean oclean fclean re
 

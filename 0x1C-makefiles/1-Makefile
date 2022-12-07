@@ -2,4 +2,4 @@ CC= gcc
 SRC= school.c main.c
 
 all:
-    $(CC) -Wall -Werror -Wextra -pedantic -std=gnu89 $(SRC) -o school
+    $(CC) $(SRC) -o school

@@ -4,4 +4,4 @@ OBJ=$(SRC:.c=.o)
 NAME= school
 
 all: $(OBJ)
-    $(CC) -Wall -Werror -Wextra -pedantic -std=gnu89 $(SRC) -o $(NAME)
+    $(CC) $(SRC) -o $(NAME)
