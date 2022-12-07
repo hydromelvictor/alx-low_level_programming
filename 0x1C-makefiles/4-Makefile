@@ -1,8 +1,8 @@
 CC= gcc
-SRC= school.c main.c
-OBJ=$(SRC:.c=.o)
-NAME= school
-RM= rm
+SRC = school.c main.c
+OBJ = $(SRC:.c=.o)
+NAME = school
+RM = rm
 CFLAGS = -Wall -Werror -Wextra -pedantic -std=gnu89
 
 all:$(OBJ)
