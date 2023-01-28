@@ -1,5 +1,5 @@
-#ifndef search_h
-#define search_h
+#ifndef SEARCH_H
+#define SEARCH_H
 
 #include <stdio.h>
 #include <stdlib.h>
