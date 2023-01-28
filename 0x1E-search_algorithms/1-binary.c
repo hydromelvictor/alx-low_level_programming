@@ -1,7 +1,7 @@
 #include "search_algos.h"
 
 /**
- * printer - print array
+ * printer - print array function for snd func
  * @array: array
  * @i: begin index
  * @n: end index
@@ -17,10 +17,10 @@ printf("\n");
 }
 
 /**
- * binary_search - value in a sorted array
- * @array: array
- * @size: size of array
- * @value: search value
+ * binary_search - value in a sorted array hjkkn ;k l
+ * @array: array jbjugghjguj jbpmmp kl,
+ * @size: size of array fuihhoù poùpl
+ * @value: search valuekk knjpôh
  * Return: integer (array index or -1)
 */
 int binary_search(int *array, size_t size, int value)
