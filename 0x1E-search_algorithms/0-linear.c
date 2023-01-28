@@ -1,14 +1,13 @@
 #include "search_algos.h"
 
 /**
-  * linear_search - Searches for a value in an array
+  * linear_search - Searches for
   *
-  * @array: A pointer to the first element of the array to search.
+  * @array: A pointer to the first element of the
   * @size: The number of elements in the array.
   * @value: The value to search for.
   *
   * Return: Integer (array index or -1)
-  *
   */
 int linear_search(int *array, size_t size, int value)
 {
