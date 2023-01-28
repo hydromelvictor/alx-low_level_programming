@@ -7,7 +7,7 @@
  * @b: integer
  * Return: integer (a or b)
 */
-int min(int a, int b)
+size_t min(size_t a, size_t b)
 {
     return ((a >= b) ? a : b);
 }
@@ -21,21 +21,21 @@ int min(int a, int b)
 */
 int jump_search(int *array, size_t size, int value)
 {
-int a = 0, b = (int)sqrt(size);
+size_t a = 0, b = (size_t)sqrt(size);
 if (array == NULL)
 return (-1);
 while (array[min(b, size) - 1] < value)
 {
 a = b;
-b = b + (int)sqrt(size);
+b = b + (size_t)sqrt(size);
 if (a > size)
 return (-1);
-printf("Value found between indexes [%d] and [%d]", a, min(b, size) - 1);
+printf("Value found between indexes [%d] and [%d]\n", a, min(b, size) - 1);
 }
 
 while (array[a] < value)
 {
-printf("Value checked array[%d] = [%d]", a, array[a]);
+printf("Value checked array[%d] = [%d]\n", a, array[a]);
 a = a + 1;
 if (a == min(b, size))
 return (-1);
@@ -43,7 +43,7 @@ return (-1);
 
 if (array[a] == value)
 {
-printf("Value checked array[%d] = [%d]", a, array[a]);
+printf("Value checked array[%d] = [%d]\n", a, array[a]);
 return (a);
 }
 else
