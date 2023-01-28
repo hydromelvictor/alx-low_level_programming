@@ -1,8 +1,3 @@
-/*
- * File: 0-linear.c
- * Auth: Victor
- */
-
 #include "search_algos.h"
 
 /**
