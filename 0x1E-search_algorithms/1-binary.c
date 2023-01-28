@@ -9,9 +9,11 @@
 void printer(int *array, size_t i, size_t n)
 {
 size_t s;
-printf("Searching in array: %d\n", array[i]);
+printf("Searching in array: %d", array[i]);
 for (s = i + 1; s <= n; s++)
 printf(", %d", array[s]);
+
+printf("\n");
 }
 
 /**
