@@ -9,7 +9,7 @@
  */
 int linear_search(int *array, size_t size, int value)
 {
-int i;
+size_t i;
 if (array == NULL)
 return (-1);
     
@@ -19,6 +19,5 @@ printf("Value checked array[%d] = [%d]", i, array[i]);
 if (array[i] == value)
 return (i);
 }
-printf("Found 999 at index: %d", -1);
 return (-1);
 }

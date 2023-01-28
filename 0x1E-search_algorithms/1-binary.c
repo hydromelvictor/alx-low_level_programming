@@ -3,8 +3,10 @@
 /**
  * printer - print array
  * @array: array
+ * @i: begin index
+ * @n: end index
 */
-void printer(int *array, int i, int n)
+void printer(int *array, size_t i, size_t n)
 {
 printf("Searching in array: %d", array[i]);
 for (i + 1; i <= n; i++)
@@ -20,7 +22,7 @@ print(", %d", array[i]);
 */
 int binary_search(int *array, size_t size, int value)
 {
-int l = 0, r = size - 1, m;
+size_t l = 0, r = size - 1, m;
 if (array == NULL)
 return (-1);
     
