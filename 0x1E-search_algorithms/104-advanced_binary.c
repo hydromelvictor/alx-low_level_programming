@@ -25,10 +25,10 @@ if (array[i] == value && (i == left ||
 array[i - 1] != value))
 return (i);
 if (array[i] >= value)
-return (advanced_binary_recursive(array, left,
+return (_recursive(array, left,
 i, value));
 
-return (advanced_binary_recursive(array, i + 1,
+return (_recursive(array, i + 1,
 right, value));
 }
 

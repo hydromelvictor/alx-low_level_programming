@@ -16,7 +16,7 @@ if (list == NULL || size == 0)
 return (NULL);
 
 step = 0;
-step_size = sqrt(size);
+step_size = (size_t)sqrt(size);
 for (node = jump = list; jump->index + 1 < size
 && jump->n < value;)
 {
