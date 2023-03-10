@@ -3,14 +3,12 @@
 #include <stdarg.h>
 /**
  * print_all - print anything 
- * 
  * @format: parameter
- *
  */
 void print_all(const char * const format, ...)
 {
 va_list list;
-int i = 0, j = 0;
+int j = 0;
 if (format == NULL)
 {
 printf("\n");
@@ -19,6 +17,7 @@ return;
 va_start(list, format);
 while (*(format + j) != '\0')
 {
+
 if (*format == 'c' || *format == 's')
 {
 printf("%s", va_arg(list, const char *));
