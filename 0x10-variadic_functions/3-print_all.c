@@ -51,7 +51,7 @@ printf("%s", str);
 
 
 /**
- * print_all - print anything 
+ * print_all - print anything
  * @format: parameter
  */
 void print_all(const char * const format, ...)
