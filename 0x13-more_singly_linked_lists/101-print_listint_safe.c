@@ -1,7 +1,6 @@
 #include "lists.h"
 /**
  * print_listint_safe - print lists
- *
  * @head: parameter
  * Return: size_t
  */
@@ -15,9 +14,8 @@ exit(98);
 while (head != NULL)
 {
 count++;
-printf("[%d] %d", head->n, head->n);
+printf("[%d] %d", &head->n, head->n);
 head = head->next;
 }
-
 return (count);
 }
