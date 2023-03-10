@@ -14,7 +14,7 @@ exit(98);
 while (head != NULL)
 {
 count++;
-printf("[%d] %d", &head->n, head->n);
+printf("[%p] %d", &head->n, head->n);
 head = head->next;
 }
 return (count);
