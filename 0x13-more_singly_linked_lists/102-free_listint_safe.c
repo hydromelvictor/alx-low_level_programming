@@ -1,4 +1,10 @@
 #include "lists.h"
+
+/**
+ * free_listint_safe - print
+ * @h: kqnknl
+ * Return: khkjljk
+*/
 size_t free_listint_safe(listint_t **h)
 {
 listint_t *del;
@@ -8,10 +14,10 @@ return (0);
 del = *h;
 while (*h != NULL)
 {
-    n++;
-    *h = (*h)->next;
-    free(del);
-    del = *h;
+n++;
+*h = (*h)->next;
+free(del);
+del = *h;
 }
 return (n);
 }
