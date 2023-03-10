@@ -31,6 +31,7 @@ close(fd);
 exit(98);
 }
 }
+
 /**
  * error99 - error for file
  *
@@ -45,6 +46,7 @@ close(fd);
 exit(99);
 }
 }
+
 /**
  * error100 - error for close
  *
@@ -58,6 +60,7 @@ dprintf(STDERR_FILENO, "Error: Can't close fd %d", n);
 exit(100);
 }
 }
+
 /**
  * main - check
  *
@@ -67,7 +70,7 @@ exit(100);
  */
 int main(int argc, char *argv[])
 {
-int fd_from, fd_to, err0, err, pos = 0;
+int fd_from, fd_to, err0, err;
 char buf[1024];
 error97(argc);
 fd_from = open(argv[1], O_RDONLY);
