@@ -4,6 +4,7 @@
 #include <sys/stat.h>
 #include <fcntl.h>
 #include <unistd.h>
+
 /**
  * error97 - error for arguments
  *
@@ -17,6 +18,7 @@ dprintf(STDERR_FILENO,"Usage: cp file_from file_to\n");
 exit(97);
 }
 }
+
 /**
  * error98 - error98
  *
@@ -63,7 +65,6 @@ exit(100);
 
 /**
  * main - check
- *
  * @argc: param
  * @argv: param
  * Return: int
@@ -75,7 +76,7 @@ char buf[1024];
 error97(argc);
 fd_from = open(argv[1], O_RDONLY);
 error98(fd_from);
-fd_to = open(argv[2], O_RDWR | O_CREAT | O_TRUNC, 0600);
+fd_to = open(argv[2], O_RDWR | O_CREAT | O_TRUNC, 0664);
 error99(fd_to);
 while (err == 1024)
 {
