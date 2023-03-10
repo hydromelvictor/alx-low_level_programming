@@ -1,6 +1,3 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <stdarg.h>
 #include "variadic_functions.h"
 
 /**
@@ -32,7 +29,7 @@ printf("%d", n);
 void print_float(va_list list)
 {
 float f;
-f = va_arg(list, float);
+f = (float) va_arg(list, double);
 printf("%f", f);
 }
 

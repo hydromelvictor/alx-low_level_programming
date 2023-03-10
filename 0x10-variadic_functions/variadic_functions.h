@@ -1,6 +1,10 @@
 #ifndef _VARIADIC_FUNC_H
 #define _VARIADIC_FUNC_H
 
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdarg.h>
+
 /**
  * struct printer
  * @symbol: character
