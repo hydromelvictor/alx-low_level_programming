@@ -12,7 +12,7 @@ int i = 0, res = 0;
 	{
 	if (((i % 3) == 0 || (i % 5) == 0) && res < 1024)
 	{
-	if (res + i < 1024)
+	if ((res + i) < 1024)
 	{
 	res += i;
 	}
@@ -23,6 +23,6 @@ int i = 0, res = 0;
 	}
 	i++;
 	}
-	printf("%d", res);
+	printf("%d\n", res);
 	return (0);
 }
