@@ -7,7 +7,7 @@
 */
 int main(void)
 {
-int i = 0, j = 0, res = 0, r = 0;
+int i = 0, res = 0, r = 0;
 	while (res < 1024)
 	{
 	r = res;
