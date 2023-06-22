@@ -7,19 +7,21 @@
 */
 int main(void)
 {
-int i = 0, res = 0, r = 0;
+int i = 0, res = 0;
 	while (res < 1024)
 	{
-	r = res;
 	if (((i % 3) == 0 || (i % 5) == 0) && res < 1024)
+	{
+	if (res + i < 1024)
 	{
 	res += i;
 	}
-	i++;
-	}
-	if (res > 1024)
+	else
 	{
-	res = r;
+	break;
+	}
+	}
+	i++;
 	}
 	printf("%d", res);
 	return (0);
